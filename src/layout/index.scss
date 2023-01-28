@@ -1,0 +1,17 @@
+.section {
+    width: 100%;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    @include flex(row,flex-start,flex-start)
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        width: 90%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+  }

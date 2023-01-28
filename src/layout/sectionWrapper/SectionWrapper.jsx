@@ -2,7 +2,7 @@ import React from 'react'
 
 const SectionWrapper = ({children}) => {
   return (
-    <section>{children}</section>
+    <section className='section'>{children}</section>
   )
 }
 
