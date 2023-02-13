@@ -5,10 +5,7 @@ const HomePage = () => {
   return (
     <SectionWrapper>
       <ContentWrapper>
-        <h1>from home Page</h1>
-        <h1>from home Page</h1>
-        <h1>from home Page</h1>
-        <h1>from home Page</h1>
+       <h1>Home Page </h1>
       </ContentWrapper>
     </SectionWrapper>
   )
