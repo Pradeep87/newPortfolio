@@ -5,7 +5,7 @@
 .content {
     width: 90%;
     margin: auto;
-    @include flex(row,flex-start,flex-start)
+    @include flex(row, flex-start, flex-start)
 }
 
 @media screen and (max-width: 768px) {
@@ -14,4 +14,31 @@
         margin: auto;
         flex-wrap: wrap;
     }
-  }
+}
+
+.navbar {
+    width: 80%;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    z-index: 10;
+    background-color: rgba($color: #09e6ff70, $alpha: 0.2);
+}
+
+.navLink {
+    @include flex(row, flex-end, center);
+    list-style-type: none;
+    li {
+        a {
+            @include flex(row, center, center);
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px;
+            border-bottom: 2px solid rgba($color: #09e6ff70, $alpha: 0.2);
+            &:hover{
+                border-bottom: 2px solid #ffffff;
+            }
+        }
+    }
+}
