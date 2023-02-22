@@ -4,7 +4,7 @@ import { loadFull } from "tsparticles";
 import { Particle } from '../../components';
 import {HomePageContext}from '.././../contaxt'
 import {hompageOptions} from '../../data/particles'
-
+import { UserSection } from '../../pagesComponent';
 
 const HomePage = () => {
 
@@ -21,7 +21,7 @@ const HomePage = () => {
             <SectionWrapper>
                     <Particle option={hompageOptions} />
                 <ContentWrapper>
-               
+               <UserSection/>
                 </ContentWrapper>
             </SectionWrapper>
         </HomePageContext.Provider>

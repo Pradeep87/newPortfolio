@@ -1,26 +1,27 @@
 .section {
     width: 100%;
+    position: relative;
 }
 
 .content {
-    width: 90%;
+    position: absolute;
+    bottom: 7vh;
+    left: 10%;
+    z-index: 10;
+    width: 80%;
+    height: 80vh;
     margin: auto;
-    @include flex(row, flex-start, flex-start)
+    @include flex(row, flex-start, flex-start);
+    // background-color: rgba($color: #09e6ff70, $alpha: 0.1);
+    border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    .content {
-        width: 90%;
-        margin: auto;
-        flex-wrap: wrap;
-    }
-}
 
 .navbar {
     width: 80%;
-    height: 60px;
+    height: 6vh;
     position: absolute;
-    top: 20px;
+    top: 0;
     left: 10%;
     z-index: 10;
     background-color: rgba($color: #09e6ff70, $alpha: 0.2);
@@ -29,8 +30,10 @@
 .navLink {
     @include flex(row, flex-end, center);
     list-style-type: none;
+
     li {
         margin-right: 20px;
+
         a {
             font-family: Inter;
             @include flex(row, center, center);
@@ -38,7 +41,8 @@
             color: #ffffff;
             padding: 10px;
             border-bottom: 2px solid rgba($color: #09e6ff70, $alpha: 0.2);
-            &:hover{
+
+            &:hover {
                 border-bottom: 2px solid #ffffff;
             }
         }
