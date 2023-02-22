@@ -30,7 +30,9 @@
     @include flex(row, flex-end, center);
     list-style-type: none;
     li {
+        margin-right: 20px;
         a {
+            font-family: Inter;
             @include flex(row, center, center);
             text-decoration: none;
             color: #ffffff;

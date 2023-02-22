@@ -1,9 +1,9 @@
 import React from 'react'
-import { AiFillHome,AiFillHeart } from "react-icons/ai";
+import { AiFillHome, AiFillHeart } from "react-icons/ai";
 import { FaUserAlt, } from "react-icons/fa";
 import { MdPermContactCalendar } from "react-icons/md";
-import { Link } from 'react-router-dom';
-import { pageRoutes}from '.././../data/constant'
+import { NavLink } from 'react-router-dom';
+import { pageRoutes } from '.././../data/constant'
 
 const Navbar = () => {
 
@@ -18,7 +18,7 @@ const Navbar = () => {
       Path: pageRoutes.aboutUs,
       Id: 2,
       LinkName: "About Me",
-      Icon: <FaUserAlt   color="#ffffff" size={20} />
+      Icon: <FaUserAlt color="#ffffff" size={20} />
     },
     {
       Path: pageRoutes.portfolio,
@@ -36,11 +36,11 @@ const Navbar = () => {
   ]
   return (
     <header className='navbar'>
-        <ul className='navLink'>
-          {
-            links.map((l) => <li><Link to={l.Path}>{l.LinkName}</Link></li>)
-          }
-        </ul>
+      <ul className='navLink'>
+        {
+          links.map((l) => <li><NavLink style={({ isActive }) =>isActive ? { borderBottom: "2px solid #ffffff" } : undefined} to={l.Path}>{l.Icon}&nbsp;&nbsp;{l.LinkName}</NavLink></li>)
+        }
+      </ul>
     </header>
   )
 }
