@@ -6,12 +6,15 @@ const Particle = ({ option }) => {
     const { particlesInit } = useContext(HomePageContext)
 
     return (
-        <Particles
-            id="tsparticles"
-            init={particlesInit}
-            // loaded={particlesLoaded}
-            options={option}
-        />
+        <div className='particles-display'>
+            <Particles
+                id="tsparticles"
+                init={particlesInit}
+                // loaded={particlesLoaded}
+                options={option}
+            />
+        </div>
+
     )
 }
 

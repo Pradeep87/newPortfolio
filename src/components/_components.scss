@@ -1,0 +1,21 @@
+// particles
+.navbar{
+    width: 100vw;
+   position: absolute;
+   top: 0px;
+   left: 0;
+   z-index: 10;
+}
+
+.particles-display{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    #tsparticles{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+ 

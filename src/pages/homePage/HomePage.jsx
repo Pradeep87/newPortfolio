@@ -19,8 +19,8 @@ const HomePage = () => {
     return (
         <HomePageContext.Provider value={contextData} >
             <SectionWrapper>
-                <ContentWrapper>
                     <Particle option={hompageOptions} />
+                <ContentWrapper>
                 </ContentWrapper>
             </SectionWrapper>
         </HomePageContext.Provider>
