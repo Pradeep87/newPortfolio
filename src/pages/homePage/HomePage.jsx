@@ -21,6 +21,7 @@ const HomePage = () => {
             <SectionWrapper>
                     <Particle option={hompageOptions} />
                 <ContentWrapper>
+               
                 </ContentWrapper>
             </SectionWrapper>
         </HomePageContext.Provider>

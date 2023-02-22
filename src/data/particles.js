@@ -5,7 +5,7 @@ export const hompageOptions = {
     },
     background: {
         color: {
-            value: "#141A31",
+            // value: "#141A31",
         },
         // position: "50% 50%",
         // repeat: "no-repeat",
