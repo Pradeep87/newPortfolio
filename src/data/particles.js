@@ -93,15 +93,10 @@ export const portfolioOptions ={
     enable: false,
     zIndex: 1,
 },
-background: {
-    color: {
-        value: "#141A31",
-    },
-},
     fpsLimit: 60,
     particles: {
       color: {
-        value: "#fbdb04",
+        value: "#09e6ff70",
         animation: {
           enable: true,
           speed: 10
@@ -138,7 +133,7 @@ background: {
         speed: 3,
         straight: true,
         trail: {
-          fillColor: "#000",
+          fillColor: "#141A31",
           length: 20,
           enable: true
         }

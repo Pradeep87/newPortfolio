@@ -3,7 +3,7 @@ import { SectionWrapper, ContentWrapper } from '../../layout'
 import { Particle } from '../../components'
 import { portfolioOptions } from '../../data/particles'
 import { polygonPathName, loadPolygonPath } from "tsparticles-path-polygon";
-
+import {portfoliobg}from '../../assets'
 
 
 const Portfolio = () => {
@@ -16,8 +16,7 @@ const Portfolio = () => {
       <Particle option={portfolioOptions} particlesInit={particlesInit} />
       <SectionWrapper>
         <ContentWrapper>
-          <div>Portfolio</div>
-          <h1>hola</h1>
+         <img src={portfoliobg} alt="" />
         </ContentWrapper>
       </SectionWrapper>
     </>
