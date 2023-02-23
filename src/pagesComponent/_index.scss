@@ -2,29 +2,34 @@
     width: 100%;
     height: 100%;
     // border: 1px solid red ;
-
+@include flex(row,space-between,center)
 }
 
 .userBackground {
-    max-width: 600px;
+    width: 600px;
     height: 600px;
-    border-radius: 30% 0px 0px 0px;
-    background: url('../assets/images/bg5.png'),rgba($color:  #09e6ff70  , $alpha: 0.1);
+    border-radius: 0px 0px 0px 0px;
+    background: url('../assets/images/bg5.png'),rgba($color: #09e6ff70, $alpha: 0.1);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    @include flex(column, flex-start, flex-start);
-
-    img {
-        width: 350px;
-        height: 350px;
-        border-radius: 50%;
-        background-color: #141A31;
+    @include flex(column, flex-start,flex-start);
         border: 2px solid #09e6ff70;
 
+    img {
+        width: 330px;
+        height: 330px;
+        // border-radius: 50%;
+    // border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ;
+        background-color: #141A31;
+        border: 2px solid rgba($color: #09e6ff70, $alpha: 0.2);
+
     }
+
+    
+}
+
 .userName{
-    width: 100%;
     // background-color:rgba($color:  #09e6ff70  , $alpha: 0.1);
     padding: 20px;
     margin-top: 20px;
@@ -33,7 +38,7 @@
     p{
         font-size: 50px;
         text-align: center;
-        color: #ffffff;
+        color:rgba($color: #09e6ff70, $alpha: 2.0) ;
         font-family: Inter;
     }
 
@@ -41,10 +46,9 @@
         margin-top: 20px;
         font-size: 50px;
         text-align: center;
-        color: #ffffff;
+               color:rgba($color: #09e6ff70, $alpha: 1.0) ;
+
         font-family: Inter;
         border-bottom: 2px solid #ffffff;
     }
-}
-    
 }
