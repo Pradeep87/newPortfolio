@@ -1,9 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Particles from "react-tsparticles";
-import { HomePageContext } from '../../contaxt'
 
-const Particle = ({ option }) => {
-    const { particlesInit } = useContext(HomePageContext)
+const Particle = ({ option,particlesInit }) => {
 
     return (
         <div className='particles-display'>

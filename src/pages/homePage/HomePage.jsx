@@ -1,9 +1,8 @@
-import React, { useCallback, useContext, createContext } from 'react'
+import React, { useCallback} from 'react'
 import { SectionWrapper, ContentWrapper } from '../../layout'
 import { loadFull } from "tsparticles";
 import { Particle } from '../../components';
-import {HomePageContext}from '.././../contaxt'
-import {hompageOptions} from '../../data/particles'
+import { hompageOptions } from '../../data/particles'
 import { UserSection } from '../../pagesComponent';
 
 const HomePage = () => {
@@ -12,19 +11,17 @@ const HomePage = () => {
         await loadFull(engine);
     }, []);
 
-    const contextData = {
-        particlesInit
-    }
+
 
     return (
-        <HomePageContext.Provider value={contextData} >
-            <Particle option={hompageOptions} />
+        < >
+            <Particle option={hompageOptions} particlesInit={particlesInit} />
             <SectionWrapper>
                 <ContentWrapper>
-               <UserSection/>
+                    <UserSection />
                 </ContentWrapper>
             </SectionWrapper>
-        </HomePageContext.Provider>
+        </>
     )
 }
 
