@@ -4,16 +4,10 @@
 }
 
 .content {
-    position: absolute;
-    bottom: 7vh;
-    left: 10%;
-    z-index: 10;
     width: 80%;
-    height: 80vh;
+    height: 90vh;
     margin: auto;
-    @include flex(row, flex-start, flex-start);
-    // background-color: rgba($color: #09e6ff70, $alpha: 0.1);
-    border-radius: 10px;
+    margin-top: 7vh;
 }
 
 
@@ -38,20 +32,20 @@
             font-family: Inter;
             @include flex(row, center, center);
             text-decoration: none;
-            color:rgba($color: #09e6ff70, $alpha: 1) ;
+            color: rgba($color: #09e6ff70, $alpha: 1);
 
             padding: 10px;
             border-bottom: 2px solid rgba($color: #09e6ff70, $alpha: 0.1);
 
             &:hover {
-                border-bottom: 2px solid rgba($color: #09e6ff70, $alpha: 2.0) ;
+                border-bottom: 2px solid rgba($color: #09e6ff70, $alpha: 2.0);
 
             }
         }
     }
 }
 
-.activeClass{
-    border-bottom: 2px solid rgba($color: #09e6ff70, $alpha: 2.0) !important ;
-    color: rgba($color: #09e6ff70, $alpha: 2.0) !important ;
+.activeClass {
+    border-bottom: 2px solid rgba($color: #09e6ff70, $alpha: 2.0) !important;
+    color: rgba($color: #09e6ff70, $alpha: 2.0) !important;
 }

@@ -1,8 +1,7 @@
 .userSection {
     width: 100%;
     height: 100%;
-    // border: 1px solid red ;
-    @include flex(row, space-between, center)
+    @include flex(row, space-between, center);
 }
 
 .userBackground {

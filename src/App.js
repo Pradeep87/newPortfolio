@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import WebFont from 'webfontloader';
-import { HomePage } from './pages';
+import { HomePage, Portfolio } from './pages';
+import {pageRoutes} from './data/constant'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Navbar } from './layout';
 
@@ -20,7 +21,8 @@ const App = () => {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path={'/'} element={<HomePage />} />
+        <Route path={pageRoutes.homePage} element={<HomePage />} />
+        <Route path={pageRoutes.portfolio} element={<Portfolio />} />
       </Routes>
     </BrowserRouter>
   )
