@@ -7,8 +7,13 @@ const UserSection = () => {
         <img src={user} alt="" />
       </div>
       <div className='userName'>
-        <p>john doe</p>
-        <h1>MERN Developer</h1>
+        <p className='name' >John Doe</p>
+        <svg viewBox="0 0 1320 300">
+          <text x="50%" y="50%" text-anchor="middle">
+            MERN Developer
+          </text>
+        </svg>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro ullam eum illo tempora non harum, iure quod eaque nam.</p>
       </div>
     </div>
   )
