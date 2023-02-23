@@ -1,5 +1,135 @@
 import { polygonPathName } from "tsparticles-path-polygon";
 
+export const maskOptions = {
+  name: "Polygon Mask",
+  interactivity: {
+    events: {
+      onClick: {
+        enable: false,
+        mode: "push"
+      },
+      onDiv: {
+        elementId: "repulse-div",
+        enable: false,
+        mode: "repulse"
+      },
+      onHover: {
+        enable: true,
+        mode: "bubble",
+        parallax: {
+          enable: false,
+          force: 20,
+          smooth: 20
+        }
+      }
+    },
+    modes: {
+      bubble: {
+        distance: 200,
+        duration: 5,
+        opacity: 8,
+        size: 10
+      },
+      connect: {
+        distance: 200,
+        links: {
+          opacity: 0.5
+        },
+        radius: 60
+      },
+      grab: {
+        distance: 400,
+        links: {
+          opacity: 0.3
+        }
+      },
+      push: {
+        quantity: 200
+      },
+      remove: {
+        quantity: 2
+      },
+      repulse: {
+        distance: 200,
+        duration: 0.4
+      },
+      slow: {
+        active: true,
+        radius: 0,
+        factor: 1
+      }
+    }
+  },
+  particles: {
+    color: {
+      value: "#09e6ff70"
+    },
+    links: {
+      blink: true,
+      color: "#09e6ff70",
+      consent: false,
+      distance: 70,
+      enable: true,
+      opacity: 0.4,
+      width: 1,
+      // triangles: {
+      //   enable: true,
+      //   color: "#09e6ff70",
+      //   opacity: 0.1
+      // }
+    },
+    move: {
+      enable: true,
+      outModes: "bounce",
+      speed: 1
+    },
+    number: {
+      limit: 0,
+      value: 150
+    },
+    opacity: {
+      animation: {
+        enable: true,
+        speed: 2,
+        sync: false
+      },
+      value: {
+        min: 10,
+        max: 20
+      }
+    },
+    shape: {
+      type: "circle"
+    },
+    size: {
+      value: 1
+    }
+  },
+  polygon: {
+    draw: {
+      enable: true,
+      lineColor: "#09e6ff70",
+      lineWidth: 0.1
+    },
+    enable: true,
+    move: {
+      radius: 30
+    },
+    inline: {
+      arrangement: "equidistant"
+    },
+    scale: 1,
+    type: "inline",
+    url: "https://particles.js.org/images/smalldeer.svg"
+  },
+  background: {
+    color: {
+      value: "#141A31",
+  },
+  }
+}
+
+
 
 export const hompageOptions = {
     fullScreen: {
@@ -40,7 +170,6 @@ export const hompageOptions = {
     particles: {
         color: {
             // value: "#ffffff",
-           
                 value: ["#09e6ff"]
         },
         links: {
