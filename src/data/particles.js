@@ -89,6 +89,15 @@ export const hompageOptions = {
 }
 
 export const portfolioOptions ={
+  fullScreen: {
+    enable: false,
+    zIndex: 1,
+},
+background: {
+    color: {
+        value: "#141A31",
+    },
+},
     fpsLimit: 60,
     particles: {
       color: {
@@ -151,9 +160,7 @@ export const portfolioOptions ={
         value: 2
       }
     },
-    fullScreen: {
-      zIndex: -1
-    },
+    
     detectRetina: true,
     emitters: {
       direction: "none",
