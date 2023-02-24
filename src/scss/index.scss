@@ -6,9 +6,9 @@
 
 
 @import './mixings';
-@import '../layout/index.scss';
+@import '../layout/layout';
 @import '../components/components';
-@import '../pagesComponent/index';
+@import '../pagesComponent/pagesComp';
 
 body{
     font-family: Inter;
