@@ -222,7 +222,7 @@ export const portfolioOptions ={
     enable: false,
     zIndex: 1,
 },
-    fpsLimit: 60,
+    fpsLimit: 240,
     particles: {
       color: {
         value: "#09e6ff70",
