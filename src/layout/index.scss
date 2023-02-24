@@ -8,7 +8,18 @@
     height: 90vh;
     margin: auto;
     margin-top: 7vh;
-    border: 1px solid red;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        width: 10px;
+      }
+      &::-webkit-scrollbar-track {
+        background:transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: rgba($color: #09e6ff70, $alpha: 0.1);
+      }
+
+
 }
 
 

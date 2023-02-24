@@ -6,7 +6,7 @@ import { polygonPathName, loadPolygonPath } from "tsparticles-path-polygon";
 import { portfoliobg } from '../../assets';
 import { loadPolygonMaskPlugin } from "tsparticles-plugin-polygon-mask";
 import { loadFull } from "tsparticles";
-import {PortfolioSection}from '../../pagesComponent'
+import {PortfolioSection,Skills}from '../../pagesComponent'
 
 
 
@@ -22,6 +22,7 @@ const Portfolio = () => {
       <Particle option={maskOptions} particlesInit={particlesInit} />
       <SectionWrapper>
         <ContentWrapper>
+          <Skills/>
           <PortfolioSection/>
         </ContentWrapper>
       </SectionWrapper>
