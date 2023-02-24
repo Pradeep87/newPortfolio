@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import WebFont from 'webfontloader';
-import { HomePage, Portfolio } from './pages';
+import { HomePage, Portfolio,ContactMe } from './pages';
 import {pageRoutes} from './data/constant'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Navbar } from './layout';
@@ -23,6 +23,7 @@ const App = () => {
       <Routes>
         <Route path={pageRoutes.homePage} element={<HomePage />} />
         <Route path={pageRoutes.portfolio} element={<Portfolio />} />
+        <Route path={pageRoutes.contact} element={<ContactMe />} />
       </Routes>
     </BrowserRouter>
   )
