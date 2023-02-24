@@ -16,12 +16,9 @@
         background:transparent;
       }
       &::-webkit-scrollbar-thumb {
-        background: rgba($color: #09e6ff70, $alpha: 0.1);
+        background: $lightBg1;
       }
-
-
 }
-
 
 .navbar {
     width: 80%;
@@ -30,34 +27,29 @@
     top: 0;
     left: 10%;
     z-index: 10;
-    background-color: rgba($color: #09e6ff70, $alpha: 0.2);
+    background-color: $lightBg2;
 }
 
 .navLink {
     @include flex(row, flex-end, center);
     list-style-type: none;
-
     li {
         margin-right: 20px;
-
         a {
             font-family: Inter;
             @include flex(row, center, center);
             text-decoration: none;
-            color: rgba($color: #09e6ff70, $alpha: 1);
-
+            color: $textColor;
             padding: 10px;
-            border-bottom: 2px solid rgba($color: #09e6ff70, $alpha: 0.1);
-
+            border-bottom: 2px solid $lightBorder1;
             &:hover {
-                border-bottom: 2px solid rgba($color: #09e6ff70, $alpha: 2.0);
-
+                border-bottom: 2px solid $lighBorder;
             }
         }
     }
 }
 
 .activeClass {
-    border-bottom: 2px solid rgba($color: #09e6ff70, $alpha: 2.0) !important;
-    color: rgba($color: #09e6ff70, $alpha: 2.0) !important;
+    border-bottom: 2px solid $lighBorder !important;
+    color: $textColor !important;
 }

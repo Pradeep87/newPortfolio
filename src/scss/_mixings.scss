@@ -1,3 +1,16 @@
+
+$darkBg:#141A31;
+
+$lightBg1:rgba($color: #09e6ff70, $alpha: 0.1);
+$lightBg2:rgba($color: #09e6ff70, $alpha: 0.2);
+
+$lighBorder:#09e6ff70;
+$lightBorder1:rgba($color: #09e6ff70, $alpha: 0.1);
+$lightBorder2:rgba($color: #09e6ff70, $alpha: 0.2);
+
+$textColor:rgba($color: #09e6ff70, $alpha: 1);
+$lightText:rgba($color: #09e6ff70, $alpha: 0.2);
+
 @mixin flex($dir,$justify,$align){
     display: flex;
     flex-direction: $dir;

@@ -14,26 +14,18 @@ body{
     font-family: Inter;
 }   
 
-
-
 .h1{
     font-size: 50px;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid rgba($color: #09e6ff70, $alpha: 2.0);
-    color: rgba($color: #09e6ff70, $alpha: 2.0);
+    border-bottom: 2px solid $lighBorder;
+    color: $textColor;
     text-align: center;
-
-}
-
-
-.h2{
-
 }
 
 .text{
     text-align: center;
         font-size: 20px;
-    color: rgba($color: #09e6ff70, $alpha: 2.0);
+    color: $textColor;
 
 }

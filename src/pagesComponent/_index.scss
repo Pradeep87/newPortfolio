@@ -8,43 +8,34 @@
     width: 600px;
     height: 600px;
     border-radius: 0px 0px 0px 0px;
-    background: url('../assets/images/bg5.png'), rgba($color: #09e6ff70, $alpha: 0.1);
+    background: url('../assets/images/bg5.png'), $lightBg1;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     @include flex(column, flex-start, flex-start);
-    border: 2px solid #09e6ff70;
-
+    border: 2px solid $lighBorder;
     img {
         width: 330px;
         height: 330px;
-        // border-radius: 50%;
         // border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ;
-        background-color: #141A31;
-        border: 2px solid rgba($color: #09e6ff70, $alpha: 0.2);
-
+        background-color:$darkBg ;
+        border: 2px solid $lightBorder2;
     }
-
-
 }
 
 .userName {
     @include flex(column, center, center);
-    // background-color:rgba($color:  #09e6ff70  , $alpha: 0.1);
     width: 600px;
     height: 600px;
-    // border: 1px solid red;
-    color: rgba($color: #09e6ff70, $alpha: 2.0);
+    color: $textColor;
     font-family: Inter;
-
     .name {
         font-size: 50px;
         text-align: center;
         margin-bottom: 20px;
         padding-bottom: 10px;
-        border-bottom: 2px solid rgba($color: #09e6ff70, $alpha: 2.0);
+        border-bottom: 2px solid $lighBorder;
     }
-
     .subtext {
         text-align: center;
         font-size: 20px;
@@ -53,14 +44,12 @@
     svg {
         font-family: Inter;
     }
-
     svg text {
         animation: stroke 5s infinite alternate;
         stroke-width: 2;
         stroke: #365fa0;
         font-size: 150px;
     }
-
     @keyframes stroke {
         0% {
             fill: rgba($color: #09e6ff70, $alpha: 0);
@@ -89,9 +78,6 @@
             stroke-width: 0;
         }
     }
-
-
-
 }
 
 .iconContainer {
@@ -99,31 +85,24 @@
         margin-bottom: 20px;
         padding: 10px;
         @include flex(column, center, center);
-
         &:hover {
             cursor: pointer;
             .icons {
-                color: rgba($color: #09e6ff70, $alpha: 1);
+                color: $textColor;
             }
-
             .iconName {
-                color: rgba($color: #09e6ff70, $alpha: 1);
-
+                color: $textColor;
             }
         }
     }
-
     @include flex(column, center, center);
-
     .icons {
         font-size: 30px;
-        color: rgba($color: #09e6ff70, $alpha: 0.2);
+        color: $lightText
     }
-
     .iconName {
         font-size: 12px;
-        color: rgba($color: #09e6ff70, $alpha: 0.2);
-
+        color: $lightText
     }
 }
 
@@ -132,21 +111,15 @@
     height: 100%;
     border: 1px solid green;
     @include flex(row, space-between, center);
-
     .myWork {
         width: 40%;
         border: 1px solid green;
-
     }
-
     .projects {
         width: 40%;
         border: 1px solid green;
         @include flex(row, space-between, center);
-
     }
-
-
 }
 
 

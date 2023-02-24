@@ -2,7 +2,7 @@
   "name": "reactbestpractices",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://PradeepR-proponent.github.io/portfolio",
+  "homepage": "https://PradeepR-proponent.github.io/portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -17,6 +17,7 @@
     "sass": "^1.57.1",
     "tsparticles": "^2.9.3",
     "tsparticles-path-polygon": "^2.9.3",
+    "tsparticles-plugin-polygon-mask": "^2.9.3",
     "web-vitals": "^2.1.4",
     "webfontloader": "^1.6.28"
   },
