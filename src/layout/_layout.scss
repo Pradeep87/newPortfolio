@@ -9,15 +9,18 @@
     margin: auto;
     margin-top: 7vh;
     overflow: auto;
+
     &::-webkit-scrollbar {
         width: 10px;
-      }
-      &::-webkit-scrollbar-track {
-        background:transparent;
-      }
-      &::-webkit-scrollbar-thumb {
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
         background: $lightBg1;
-      }
+    }
 }
 
 .navbar {
@@ -33,8 +36,12 @@
 .navLink {
     @include flex(row, flex-end, center);
     list-style-type: none;
+    transition: all 1s;
+
     li {
         margin-right: 20px;
+        transition: all 1s;
+
         a {
             font-family: Inter;
             @include flex(row, center, center);
@@ -42,6 +49,8 @@
             color: $textColor;
             padding: 10px;
             border-bottom: 2px solid $lightBorder1;
+            transition: all 1s;
+
             &:hover {
                 border-bottom: 2px solid $lighBorder;
             }
@@ -52,4 +61,91 @@
 .activeClass {
     border-bottom: 2px solid $lighBorder !important;
     color: $textColor !important;
+}
+
+.toggle {
+    display: none;
+}
+
+
+@media screen and (max-width:1024px) {
+    .content {
+        width: 100%;
+    }
+
+    .navbar {
+        width: 100%;
+        left: 0;
+        height: auto;
+        padding: 20px;
+        transition: all 1s;
+    }
+}
+
+
+
+
+@media screen and (max-width:798px) {
+   
+    .navLink {
+        @include flex(column, flex-start, flex-start);
+    }
+
+    .hide {
+        transform: translateY(-150%);
+        padding: 0;
+        margin: 0px;
+    }
+
+    .toggle {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        border: 2px solid $textColor ;
+        position: absolute;
+        right: 30px;
+        @include flex(column, center, center);
+        padding: 5px;
+
+        .toggleBox {
+            width: 100%;
+            position: relative;
+
+            .one {
+                width: 100%;
+                height: 3px;
+                background-color: $textColor;
+                transition: all 0.5s;
+                margin-bottom: 5px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+
+            .four {
+                margin-bottom: 0px;
+                transform: rotate(270deg);
+                position: absolute;
+                top: 0;
+            }
+
+            .six {
+                width: 0px;
+            }
+
+            .five {
+                position: absolute;
+                top: 0;
+                transform: rotate(180deg);
+
+            }
+
+        }
+
+    }
+
+
+
+
 }
