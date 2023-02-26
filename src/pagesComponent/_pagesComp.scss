@@ -5,8 +5,8 @@
 }
 
 .userBackground {
-    width: 600px;
-    height: 600px;
+    width: 40%;
+    height: 80%;
     border-radius: 0px 0px 0px 0px;
     background: url('../assets/images/bg5.png'), $lightBg1;
     background-repeat: no-repeat;
@@ -26,11 +26,11 @@
 
 .userName {
     @include flex(column, center, center);
-    width: 600px;
-    height: 600px;
+    width: 50%;
+    height: 80%;
     color: $textColor;
     font-family: Inter;
-
+    padding: 20px;
     .name {
         font-size: 50px;
         text-align: center;
@@ -251,4 +251,31 @@
     &::placeholder {
      color: $textColor;
     }
+}
+
+
+
+
+
+@media screen and (max-width:798px) {
+
+.userSection {
+    width: 100%;
+    height: 100%;
+    @include flex(column, space-between, center);
+}
+
+.userBackground {
+    width: 80%;
+    height: 100%;
+    img {
+        width: 230px;
+        height: 230px;
+    }
+}
+.userName{
+     width: 80%;
+    height: 100%;
+}
+
 }
