@@ -3,18 +3,9 @@ import React from 'react'
 import { iconsData } from '../../data/constant';
 import { AiOutlineSend } from "react-icons/ai";
 
-
-
-
-
-
-
-
-
 const Portfolio = () => {
     return (
         <div className='portfolioSection'>
-
             <div className='myWork'>
                 <h2 className='h1'>Work Experience</h2>
                 <div>
@@ -24,7 +15,6 @@ const Portfolio = () => {
                         desktop application using React-Electron while
                         managing the State with Redux and Redux
                         middleware Thunk.</p>
-
                 </div>
                 <div className='second-work'>
                     <p className='text'><AiOutlineSend/> Frontend developer</p>
@@ -33,12 +23,8 @@ const Portfolio = () => {
                         a haircut salon Staff Management Application
                         using React Native.
                     </p>
-
                 </div>
-
             </div>
-
-
             <div className='projects'>
                 <div className='iconContainer'>
                     {iconsData.map((i, idx) => <div key={idx} className='iconBox'> {i.icon}

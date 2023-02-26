@@ -11,12 +11,6 @@ const links = [
     LinkName: "Home",
     Icon: <AiFillHome color="rgba($color: #09e6ff70, $alpha: 2.0)" size={20} />
   },
-  // {
-  //   Path: pageRoutes.aboutUs,
-  //   Id: 2,
-  //   LinkName: "About Me",
-  //   Icon: <FaUserAlt color="rgba($color: #09e6ff70, $alpha: 2.0)" size={20} />
-  // },
   {
     Path: pageRoutes.portfolio,
     Id: 3,
@@ -33,17 +27,10 @@ const links = [
 ]
 const Navbar = () => {
 const [toggle, setToggle] = useState(false)
- 
-const handleToggle=()=>{
-  setToggle(!toggle)
-  console.log(toggle)
-}
 
-
-
-  return (
-    <header className='navbar' style={{background:toggle?"":"none"}}>
-      <div className='toggle' onClick={handleToggle} >
+return (
+    <header className={toggle?' navbar navbarBg':"navbar" }>
+      <div className='toggle' onClick={()=>setToggle(!toggle)} >
         <div className='toggleBox'>
         <div className={toggle ?'one four':"one"}></div>
         <div className={toggle ?"one five":'one'}></div>

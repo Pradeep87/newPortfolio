@@ -1,5 +1,6 @@
 import React from 'react'
 import { user, userBackground } from '../../assets'
+import {SocialIcons}  from '../../components'
 const UserSection = () => {
   return (
     <div className='userSection'>
@@ -14,6 +15,9 @@ const UserSection = () => {
           </text>
         </svg>
         <p style={{textAlign:"center"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro ullam eum illo tempora non harum, iure quod eaque nam.</p>
+        <div className="homeIcons">
+        <SocialIcons/>
+        </div>
       </div>
     </div>
   )
