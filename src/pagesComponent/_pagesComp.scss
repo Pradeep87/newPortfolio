@@ -14,11 +14,12 @@
     background-size: cover;
     @include flex(column, flex-start, flex-start);
     border: 2px solid $lighBorder;
+
     img {
         width: 330px;
         height: 330px;
         // border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ;
-        background-color:$darkBg ;
+        background-color: $darkBg ;
         border: 2px solid $lightBorder2;
     }
 }
@@ -29,6 +30,7 @@
     height: 600px;
     color: $textColor;
     font-family: Inter;
+
     .name {
         font-size: 50px;
         text-align: center;
@@ -36,6 +38,7 @@
         padding-bottom: 10px;
         border-bottom: 2px solid $lighBorder;
     }
+
     .subtext {
         text-align: center;
         font-size: 20px;
@@ -44,12 +47,14 @@
     svg {
         font-family: Inter;
     }
+
     svg text {
         animation: stroke 5s infinite alternate;
         stroke-width: 2;
         stroke: #365fa0;
         font-size: 150px;
     }
+
     @keyframes stroke {
         0% {
             fill: rgba($color: #09e6ff70, $alpha: 0);
@@ -89,23 +94,28 @@
         margin-bottom: 20px;
         padding: 10px;
         @include flex(column, center, center);
-       
+
 
         &:hover {
             cursor: pointer;
+
             .icons {
                 color: $textColor;
             }
+
             .iconName {
                 color: $textColor;
             }
         }
     }
+
     @include flex(column, center, center);
+
     .icons {
         font-size: 30px;
         color: $lightText
     }
+
     .iconName {
         font-size: 12px;
         color: $lightText
@@ -120,30 +130,125 @@
     height: 100%;
 
     @include flex(row, space-between, center);
+
     .myWork {
         width: 50%;
     }
+
     .projects {
         width: 40%;
-    @include flex(column,center, center);
-        .skillBox{
-        width: 90%;
+        @include flex(column, center, center);
+
+        .skillBox {
+            width: 90%;
             margin-bottom: 15px;
-    @include flex(row, flex-start, center);
+            @include flex(row, flex-start, center);
+
             .icons {
                 font-size: 50px;
                 color: $textColor;
                 margin-right: 20px;
             }
+
             .iconName {
                 font-size: 25px;
-                color: $textColor   
+                color: $textColor
             }
         }
     }
 }
 
 
-.second-work{
-margin-top: 30px;
+.second-work {
+    margin-top: 30px;
+}
+
+
+.contactSection {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: $lightBg1;
+
+    .contactList {
+        width: 50%;
+        // border: 1px solid red;
+
+        a {
+            text-decoration: none;
+            @include flex(row, flex-start, center);
+            margin: 30px 0px 30px 0px;
+
+            &:hover {
+                color: $lightText;
+
+                .icons {
+                    color: $lightText;
+
+                }
+            }
+        }
+
+        .iconContainer {
+            @include flex(row, flex-start, center);
+            margin: 30px 0px 30px 0px;
+        }
+
+        .icons {
+            color: $textColor;
+            font-size: 30px;
+            margin-right: 20px;
+
+            &:hover {
+                color: $lightText;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+
+.messageArea {
+    @include flex(row, space-between, center);
+
+    .sendMessage {
+        @include flex(column, flex-start, flex-start);
+
+        .btn {
+            padding: 10px 20px;
+            margin: 20px 0px;
+            border-radius: 20px;
+            border: 2px solid $textColor;
+            background: transparent;
+            color: $textColor;
+
+            &:hover{
+                color: $lightText;
+            border: 2px solid $lightText;
+                cursor: pointer;
+            }
+
+        }
+
+    }
+
+}
+
+
+.textInput {
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 2px solid $lighBorder;
+    caret-color: $textColor;
+    color: $textColor;
+    font-size: 14px;
+    font-family: Inter;
+    padding: 10px;
+
+    &::placeholder {
+     color: $textColor;
+    }
 }

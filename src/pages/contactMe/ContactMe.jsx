@@ -4,7 +4,7 @@ import { Particle } from '../../components'
 import { portfolioOptions } from '../../data/particles'
 import { loadPolygonPath } from "tsparticles-path-polygon";
 import { loadFull } from "tsparticles";
-import {PortfolioSection,Skills}from '../../pagesComponent'
+import {ContactSection}from '../../pagesComponent'
 
 const ContactMe = () => {
     const particlesInit = useCallback(async (engine) => {
@@ -16,7 +16,7 @@ const ContactMe = () => {
     <Particle option={portfolioOptions} particlesInit={particlesInit} />
     <SectionWrapper>
       <ContentWrapper>
-      
+      <ContactSection/>
       </ContentWrapper>
     </SectionWrapper>
   </>
