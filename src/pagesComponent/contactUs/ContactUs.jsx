@@ -12,7 +12,7 @@ const ContactUs = () => {
                     <a href="tel:+918755819345" className='text'><FaPhoneAlt className='icons' />+91 8755819345</a>
                 </div>
                 <div>
-                    <p className='text'><AiOutlineSend /> Social Accounts</p>
+                    <p className='text'><AiOutlineSend /> Social Media</p>
                     <SocialIcons/>
                 </div>
                 <div className='messageArea'>
