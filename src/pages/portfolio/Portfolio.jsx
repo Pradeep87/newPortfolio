@@ -1,9 +1,7 @@
 import React, { useCallback } from 'react'
 import { SectionWrapper, ContentWrapper } from '../../layout'
 import { Particle } from '../../components'
-import { portfolioOptions,maskOptions } from '../../data/particles'
-import { polygonPathName, loadPolygonPath } from "tsparticles-path-polygon";
-import { portfoliobg } from '../../assets';
+import { maskOptions } from '../../data/particles'
 import { loadPolygonMaskPlugin } from "tsparticles-plugin-polygon-mask";
 import { loadFull } from "tsparticles";
 import {PortfolioSection,Skills}from '../../pagesComponent'

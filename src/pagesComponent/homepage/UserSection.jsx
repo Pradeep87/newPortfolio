@@ -1,5 +1,5 @@
 import React from 'react'
-import { user, userBackground } from '../../assets'
+import { user} from '../../assets'
 import {SocialIcons}  from '../../components'
 const UserSection = () => {
   return (

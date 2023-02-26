@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 import { AiFillHome, AiFillHeart } from "react-icons/ai";
-import { FaUserAlt, } from "react-icons/fa";
 import { MdPermContactCalendar } from "react-icons/md";
 import { NavLink } from 'react-router-dom';
 import { pageRoutes } from '.././../data/constant'
