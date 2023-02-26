@@ -13,7 +13,7 @@ const UserSection = () => {
             MERN Developer
           </text>
         </svg>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro ullam eum illo tempora non harum, iure quod eaque nam.</p>
+        <p style={{textAlign:"center"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro ullam eum illo tempora non harum, iure quod eaque nam.</p>
       </div>
     </div>
   )

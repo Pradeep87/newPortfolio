@@ -1,7 +1,7 @@
-*{
- margin: 0px;
- padding: 0px;
- box-sizing: border-box;   
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 
@@ -10,22 +10,33 @@
 @import '../components/components';
 @import '../pagesComponent/pagesComp';
 
-body{
+body {
     font-family: Inter;
-}   
+}
 
-.h1{
+.h1 {
     font-size: 50px;
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid $lighBorder;
     color: $textColor;
-    text-align: center;
 }
 
-.text{
-    text-align: center;
-        font-size: 20px;
+.text {
+    font-size: 20px;
     color: $textColor;
 
+}
+
+.lightText {
+    font-size: 16px;
+    color: $lightText;
+    line-height: 34px;
+}
+
+.bigPara {
+    font-size: 18px;
+    line-height: 24px;
+
+    color: $lightText2;
 }

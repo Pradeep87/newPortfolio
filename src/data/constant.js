@@ -1,6 +1,16 @@
-import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaSass } from "react-icons/fa";
-import { SiElectron, SiMongodb, SiRedux } from "react-icons/si";
+import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaSass,FaGithub } from "react-icons/fa";
+import { SiElectron, SiMongodb, SiRedux,SiMicrosoftexchange } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
+
+
+export const pageRoutes = {
+    homePage: "/",
+    aboutUs: "/about",
+    contact: "/contact",
+    portfolio: "/portfolio"
+}
+
+
 
 export const iconsData = [
     {
@@ -20,7 +30,7 @@ export const iconsData = [
     }, {
         id: 4,
         icon: <DiJavascript1 className='icons' />,
-        name: "JavaScript"
+        name: "JavaScript, ECMAScript."
     },
     {
         id: 5,
@@ -30,7 +40,7 @@ export const iconsData = [
     {
         id: 6,
         icon: <SiRedux className='icons' />,
-        name: "Redux"
+        name: "Redux, Redux-Middleware, Redux-Toolkit"
     },
     {
         id: 7,
@@ -40,7 +50,7 @@ export const iconsData = [
     {
         id: 8,
         icon: <SiElectron className='icons' />,
-        name: "Electron"
+        name: "Electronjs, React-Electron"
     },
     {
         id: 9,
@@ -52,14 +62,15 @@ export const iconsData = [
         icon: <SiMongodb className='icons' />,
         name: "Mongodb"
     },
+    {
+        id: 11,
+        icon: <FaGithub className='icons' />,
+        name: "Git Version Control"
+    },
+    {
+        id: 11,
+        icon: <SiMicrosoftexchange className='icons' />,
+        name: "Office Automation Tools"
+    },
 
 ]
-
-
-
-export const pageRoutes = {
-    homePage: "/",
-    aboutUs: "/about",
-    contact: "/contact",
-    portfolio: "/portfolio"
-}

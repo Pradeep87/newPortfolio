@@ -10,6 +10,7 @@ $lightBorder2:rgba($color: #09e6ff70, $alpha: 0.2);
 
 $textColor:rgba($color: #09e6ff70, $alpha: 1);
 $lightText:rgba($color: #09e6ff70, $alpha: 0.2);
+$lightText2:rgba($color: #09e6ff70, $alpha: 0.7);
 
 @mixin flex($dir,$justify,$align){
     display: flex;
