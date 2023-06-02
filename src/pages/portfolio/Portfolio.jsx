@@ -10,7 +10,6 @@ import {PortfolioSection,Skills}from '../../pagesComponent'
 
 const Portfolio = () => {
   const particlesInit = useCallback(async (engine) => {
-    // await loadPolygonPath(engine);
     await loadFull(engine);
     await loadPolygonMaskPlugin(engine);
   }, []);

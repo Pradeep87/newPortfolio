@@ -1,9 +1,9 @@
-import React, { useCallback} from 'react'
+import React, { useCallback } from 'react'
 import { SectionWrapper, ContentWrapper } from '../../layout'
 import { loadFull } from "tsparticles";
 import { Particle } from '../../components';
 import { hompageOptions } from '../../data/particles'
-import { UserSection } from '../../pagesComponent';
+import { UserSection, Skills, PortfolioSection, ContactSection } from '../../pagesComponent';
 
 const HomePage = () => {
 
@@ -19,6 +19,9 @@ const HomePage = () => {
             <SectionWrapper>
                 <ContentWrapper>
                     <UserSection />
+                    <Skills />
+                    <PortfolioSection />
+                    <ContactSection />
                 </ContentWrapper>
             </SectionWrapper>
         </>
