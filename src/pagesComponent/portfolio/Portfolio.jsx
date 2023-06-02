@@ -1,6 +1,4 @@
 import React from 'react'
-
-import { iconsData } from '../../data/constant';
 import { AiOutlineSend } from "react-icons/ai";
 
 
