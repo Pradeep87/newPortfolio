@@ -9,19 +9,14 @@ const Portfolio = () => {
             <div className='myWork'>
                 <h2 className='h1'>Work Experience</h2>
                 <div>
-                    <p className='text'><AiOutlineSend/> Web developer Intern</p>
-                    <p className='lightText'>Koders-Dehradun (10 january - 25 April 2022)</p>
-                    <p className='bigPara'>Developed web apps using React js and a
-                        desktop application using React-Electron while
-                        managing the State with Redux and Redux
-                        middleware Thunk.</p>
+                    <p className='text'><AiOutlineSend /> Frontend developer </p>
+                    <p className='lightText'>Proponent technologies (22 may 2022 - 31 may 2023)</p>
+                    <p className='bigPara'>Experienced in developing a Food app using the MERN stack, delivering a seamless ordering and delivery experience. Created a chat application using React.js and Getstream.io, enabling real-time communication and collaboration. Developed mobile apps using React Native Expo, providing cross-platform functionality for enhanced user experiences.</p>
                 </div>
                 <div className='second-work'>
-                    <p className='text'><AiOutlineSend/> Frontend developer</p>
-                    <p className='lightText'>Proponent technologies (22 may - present)</p>
-                    <p className='bigPara'> Developed food app in MERN stack, Chat Application using Reactjs and Getstream.io and
-                        a haircut salon Staff Management Application
-                        using React Native.
+                    <p className='text'><AiOutlineSend /> Web developer Intern</p>
+                    <p className='lightText'>Koders-Dehradun (10 january - 25 April 2022)</p>
+                    <p className='bigPara'>Worked on various front-end projects utilizing React.js and React-Electron. Developed responsive and user-friendly interfaces, implemented state management with Redux, and utilized React-Electron to create desktop applications. Collaborated with cross-functional teams to deliver high-quality solutions that exceeded client expectations.
                     </p>
                 </div>
             </div>

@@ -13,7 +13,7 @@ const Skills = () => {
     <div className='portfolioSection'>
       <div className='myWork'>
         <h2 className='h1'>My Skills</h2>
-        <p className='bigPara'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nisi, est rerum mollitia nemo quod excepturi provident dolore ipsa! Molestias distinctio voluptatem nesciunt. Architecto quibusdam quisquam voluptatibus temporibus natus corporis culpa numquam dicta fugiat tempora in porro placeat explicabo, quos laboriosam et nihil doloribus excepturi. Qui fuga modi impedit in.</p>
+        <p className='bigPara'>As a MERN developer with a focus on mobile app development using React Native and Expo, I possess a diverse range of skills to create exceptional mobile experiences. With proficiency in JavaScript and React Native, I excel in building cross-platform applications that work seamlessly on both iOS and Android devices. I have a deep understanding of Expo, allowing me to leverage its powerful features for rapid development, hot reloading, and easy deployment. Moreover, my expertise extends to integrating APIs, implementing device functionality, and optimizing app performance. With a passion for delivering high-quality and user-friendly mobile apps, I'm committed to bringing your ideas to life.</p>
       </div>
 
       <div className='projects' >

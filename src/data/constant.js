@@ -1,5 +1,5 @@
 import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaSass,FaGithub } from "react-icons/fa";
-import { SiElectron, SiMongodb, SiRedux,SiMicrosoftexchange } from "react-icons/si";
+import { SiElectron, SiMongodb, SiRedux,SiMicrosoftexchange,SiNextdotjs,SiVuedotjs,SiNuxtdotjs } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 
 
@@ -35,13 +35,15 @@ export const iconsData = [
     {
         id: 5,
         icon: <FaReact className='icons' />,
-        name: "Reactjs"
+        name: "React js"
     },
     {
-        id: 6,
-        icon: <SiRedux className='icons' />,
-        name: "Redux, Redux-Middleware, Redux-Toolkit"
+        id: 12,
+        icon: <SiNextdotjs className='icons' />,
+        name: "Next js"
     },
+   
+   
     {
         id: 7,
         icon: <FaReact className='icons' />,
@@ -50,17 +52,32 @@ export const iconsData = [
     {
         id: 8,
         icon: <SiElectron className='icons' />,
-        name: "Electronjs, React-Electron"
+        name: "Electron js, React-Electron"
     },
     {
         id: 9,
         icon: <FaNodeJs className='icons' />,
-        name: "Nodejs"
+        name: "Node js, Express js"
     },
     {
         id: 10,
         icon: <SiMongodb className='icons' />,
-        name: "Mongodb"
+        name: "Mongodb, Mongoose"
+    },
+    {
+        id: 13,
+        icon: <SiVuedotjs className='icons' />,
+        name: "Vue js"
+    },
+    {
+        id: 14,
+        icon: <SiNuxtdotjs className='icons' />,
+        name: "Nuxt js"
+    },
+    {
+        id: 6,
+        icon: <SiRedux className='icons' />,
+        name: "Redux, Redux-Middleware, Redux-Toolkit"
     },
     {
         id: 11,
