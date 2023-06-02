@@ -8,7 +8,7 @@ const UserSection = () => {
         <img src={user} alt="" />
       </div>
       <div className='userName'>
-        <p className='name' >John Doe</p>
+        <p className='name' >Pradeep Rajput</p>
         <svg viewBox="0 0 1320 300">
           <text x="50%" y="50%" text-anchor="middle">
             MERN Developer

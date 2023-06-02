@@ -15,33 +15,32 @@ body {
 }
 
 .h1 {
-    font-size: 36px;
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid $lighBorder;
     color: $textColor;
+    font-family: Inter;
+
 }
 
 .text {
-    font-size: 20px;
     color: $textColor;
+    font-family: Roboto;
+
 }
 
 .lightText {
-    font-size: 16px;
     color: $lightText;
     line-height: 34px;
+    font-family: Inter;
+
 }
 
 .bigPara {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
     color: $lightText2;
+    font-family: Inter;
+
 }
 
-
-@media screen and (max-width:798px) {
-    .text {
-        font-size: 18px;
-    }
-}
