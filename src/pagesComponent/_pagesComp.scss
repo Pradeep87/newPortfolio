@@ -90,8 +90,15 @@ svg text {
 
 
 .iconContainer {
-    
+    .projectImages {
+        height: 200px;
+        width: 350px;
+        object-fit: contain;
+        margin: 50px 0px;
+    }
+
     @include flex(column, flex-start, flex-start);
+
     .iconBox {
         margin-bottom: 20px;
         padding: 10px;
@@ -135,6 +142,7 @@ svg text {
     .projects {
         width: 40%;
         @include flex(column, flex-start, flex-start);
+
         .skillBox {
             width: 90%;
             margin-bottom: 15px;
@@ -155,7 +163,30 @@ svg text {
 }
 
 .second-work {
-    margin-top: 30px;
+ 
+    border-bottom: 1px solid $lightBorder2;
+    padding: 50px 0px;
+   
+.techContainer{
+    @include flex(row, flex-start, center);
+    margin-bottom: 50px;
+
+}
+    .projectsIcon {
+    
+        width: 120px;
+        height: 100px;
+        @include flex(column, center, center);
+        .icons {
+            font-size: 30px;
+            margin: 0px;
+        }
+    }
+
+
+
+
+
 }
 
 .contactSection {
@@ -263,7 +294,6 @@ svg text {
     }
 
     .portfolioSection {
-        margin: 30px 0px;
 
         .projects {
             .skillBox {
@@ -318,7 +348,10 @@ svg text {
 
         .myWork {
             width: 100%;
-            margin-bottom: 50px;
+            margin-top: 50px;
+            .h1{
+                margin-bottom: 50px;
+            }
         }
 
         .projects {
