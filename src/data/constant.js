@@ -1,7 +1,10 @@
 import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaSass,FaGithub } from "react-icons/fa";
 import { SiElectron, SiMongodb, SiRedux,SiMicrosoftexchange,SiNextdotjs,SiVuedotjs,SiNuxtdotjs } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
-import { kyro, kyroLogo, ucLogo, uc1, uc2, argon, metaSole, truckin, sonu1, sonu2, sonu3, farm1, farm2, viet1, viet2, viet3, viet4, } from '../assets';
+import {
+    uc1,uc2,ucLogo ,metaSole,argon,kyroLogo,kyro,truckin,
+sonu1,farm1,farm2,viet1,viet2,viet3,viet4,farm3,sonu4,sonu5,sonu6,sonu7,sonu8,viet5,farm4
+} from '../assets';
 
 
 export const pageRoutes = {
@@ -176,7 +179,7 @@ export const projectData = [
     {
         project: "Sonu Haircut Salon",
         description: "In my role at Sonu Haircut Salon, I successfully developed two apps using React Native Expo. First, I created a staff app that streamlined scheduling, resource management, and enhanced operational efficiency for the salon. Additionally, I developed a client app that provided users with a seamless and user-friendly experience for booking appointments and accessing salon services.",
-        images: [sonu1, sonu2, sonu3],
+        images: [sonu4,sonu5,sonu6,sonu7,sonu8,sonu1,],
         technology: "(React-Native Expo)",
         icons:[
             {
@@ -188,7 +191,7 @@ export const projectData = [
     {
         project: "Farmpreneur",
         description: "In the Farmpreneur app, I took charge of designing the user interface and integrating APIs to provide weather information from open weather services. This app provided a platform for farmers to sell their crops, empowering them with a digital marketplace to reach potential buyers and optimize their sales opportunities.",
-        images: [farm1, farm2],
+        images: [farm3,farm4,farm1, farm2],
         technology: "(React-Native Expo)",
         icons:[
             {
@@ -200,7 +203,7 @@ export const projectData = [
     {
         project: "Vietnam Factory ",
         description: "In my contributions to the Vietnam Factory B2B project, I successfully addressed bugs and errors in the frontend APIs during version 1, ensuring smooth functionality. In version 2, I took on a more comprehensive role by creating the project from scratch. This involved setting up the entire project using Nuxt.js, implementing robust state management, and incorporating authentication through Nuxt plugins. I also facilitated language translation in both Vietnamese and English, enhancing accessibility. Furthermore, I integrated Laravel APIs to seamlessly fetch and display data on the frontend, improving overall user experience.",
-        images: [viet1, viet2, viet3, viet4],
+        images: [viet5,viet1, viet2, viet3, viet4],
         technology: "(Nuxt js)",
         icons:[
             {

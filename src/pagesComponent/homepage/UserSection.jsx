@@ -14,7 +14,7 @@ const UserSection = () => {
             MERN Developer
           </text>
         </svg>
-        <p style={{textAlign:"center"}}>I'm a skilled web developer specializing in creating dynamic and user-friendly websites. With a keen eye for design and a passion for coding, I bring creativity and functionality together to deliver exceptional online experiences.</p>
+        <p className='subtext' style={{textAlign:"center"}}>I'm a skilled web developer specializing in creating dynamic and user-friendly websites. With a keen eye for design and a passion for coding, I bring creativity and functionality together to deliver exceptional online experiences.</p>
         <div className="homeIcons">
         <SocialIcons/>
         </div>

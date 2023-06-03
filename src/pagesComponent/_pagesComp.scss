@@ -34,6 +34,7 @@
     padding: 20px;
 
     .name {
+        font-family:  "El Messiri",sans-serif;
         font-size: 36px;
         text-align: center;
         margin-bottom: 20px;
@@ -44,6 +45,8 @@
     .subtext {
         text-align: center;
         font-size: 18px;
+        font-family:  "El Messiri",sans-serif;
+
     }
 
 }
@@ -57,6 +60,7 @@ svg text {
     stroke-width: 2;
     stroke: #365fa0;
     font-size: 150px;
+        font-family:  "El Messiri",sans-serif;
 }
 
 @keyframes stroke {

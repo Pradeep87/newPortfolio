@@ -11,7 +11,7 @@ const App = () => {
 
   useEffect(() => {
     WebFont.load({
-      google: { families: ['Inter', 'Roboto'] }
+      google: { families: ['Inter', 'Roboto', "El Messiri",'sans-serif'] }
     });
   }, [])
 
