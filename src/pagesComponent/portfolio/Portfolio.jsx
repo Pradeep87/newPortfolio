@@ -3,7 +3,6 @@ import { AiOutlineSend } from "react-icons/ai";
 import { workingProjects, projectData } from '../../data/constant';
 
 const ProjectSection = ({ d }) => {
-
     const [count, setCount] = useState(0);
     useEffect(() => {
         const timer = setInterval(() => {
@@ -17,10 +16,10 @@ const ProjectSection = ({ d }) => {
     }, [d.images.length]);
 
     return (
-        <div className='second-work'  >
-            <p className='text'><AiOutlineSend /> {d.project}</p>
-            <img className='projectImages' src={d.images[count]} alt={d.project} />
-            <div className='techContainer'>
+        <div className='second-work'   >
+            <p className='text' data-aos="zoom-in-up" ><AiOutlineSend /> {d.project}</p>
+            <img data-aos="zoom-in-up" className='projectImages' src={d.images[count]} alt={d.project} />
+            <div className='techContainer' data-aos="zoom-in-up" >
                 {
                     d.icons.map((i, idx) => <div className='projectsIcon' key={idx}>
                         {i.icon}
@@ -28,7 +27,7 @@ const ProjectSection = ({ d }) => {
                     </div>)
                 }
             </div>
-            <p className='bigPara'>{d.description}
+            <p className='bigPara' data-aos="zoom-in-up" >{d.description}
             </p>
         </div>
     )
@@ -37,32 +36,31 @@ const ProjectSection = ({ d }) => {
 const Portfolio = () => {
     return (
         <div className='portfolioSection'>
-            <div className='myWork'>
+            <div className='myWork' data-aos="zoom-in-up" >
                 <h2 className='h1'>Work Experience</h2>
-                <div>
-                    <p className='text'><AiOutlineSend /> Frontend Developer </p>
+                <div data-aos="zoom-in-up" >
+                    <p className='text' data-aos="zoom-in-up" ><AiOutlineSend /> Frontend Developer </p>
                     <p className='lightText'>Proponent Technologies <br />(22 may 2022 - 31 may 2023)</p>
-                    <p className='bigPara'>Experienced in developing a Food app using the MERN stack, delivering a seamless ordering and delivery experience. Created a chat application using React.js and Getstream.io, enabling real-time communication and collaboration. Developed mobile apps using React Native Expo, providing cross-platform functionality for enhanced user experiences.</p>
+                    <p className='bigPara' data-aos="zoom-in-up" >Experienced in developing a Food app using the MERN stack, delivering a seamless ordering and delivery experience. Created a chat application using React.js and Getstream.io, enabling real-time communication and collaboration. Developed mobile apps using React Native Expo, providing cross-platform functionality for enhanced user experiences.</p>
                 </div>
                 <div className='second-work'>
-                    <p className='text'><AiOutlineSend /> Web Developer Intern</p>
-                    <p className='lightText'>Koders-Dehradun <br />(10 january - 25 April 2022)</p>
-                    <p className='bigPara'>Worked on various front-end projects utilizing React.js and React-Electron. Developed responsive and user-friendly interfaces, implemented state management with Redux, and utilized React-Electron to create desktop applications. Collaborated with cross-functional teams to deliver high-quality solutions that exceeded client expectations.
+                    <p className='text' data-aos="zoom-in-up" ><AiOutlineSend /> Web Developer Intern</p>
+                    <p className='lightText' data-aos="zoom-in-up" >Koders-Dehradun <br />(10 january - 25 April 2022)</p>
+                    <p className='bigPara' data-aos="zoom-in-up" >Worked on various front-end projects utilizing React.js and React-Electron. Developed responsive and user-friendly interfaces, implemented state management with Redux, and utilized React-Electron to create desktop applications. Collaborated with cross-functional teams to deliver high-quality solutions that exceeded client expectations.
                     </p>
                 </div>
             </div>
-            <div className='projects'>
+            <div className='projects'  >
 
                 <div className='iconContainer'>
-                    <h2 className='h1' style={{marginTop:'50px'}} >Projects Completed</h2>
+                    <h2 className='h1' style={{ marginTop: '50px' }} data-aos="zoom-in-up" >Projects Completed</h2>
                     {
                         projectData.map((d, idx) => <ProjectSection d={d} key={idx} />)
                     }
-
-                    <h2 className='h1' style={{ marginTop: '50px' }}  >Working Projects</h2>
+                    <h2 className='h1' style={{ marginTop: '50px' }} data-aos="zoom-in-up" >Working Projects</h2>
                     {
                         workingProjects.map((d) => (
-                            <div className='second-work'>
+                            <div className='second-work' data-aos="zoom-in-up" >
                                 <p className='text'><AiOutlineSend /> {d.project}</p>
                                 <p className='lightText'>{d.technology}</p>
                                 <p className='bigPara'>{d.description}

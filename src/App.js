@@ -4,7 +4,8 @@ import { HomePage, Portfolio,ContactMe } from './pages';
 import {pageRoutes} from './data/constant'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Navbar } from './layout';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const App = () => {
@@ -15,6 +16,14 @@ const App = () => {
     });
   }, [])
 
+  useEffect(() => {
+     AOS.init({
+      offset: 100,
+      duration: 1000,
+      easing: 'ease',
+      delay: 500,
+    });
+  }, []);
   return (
     <BrowserRouter>
       <Navbar />

@@ -1,21 +1,21 @@
 import React from 'react'
 import { AiOutlineSend, AiFillMail } from "react-icons/ai";
-import {  FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import { SocialIcons } from '../../components';
 const ContactUs = () => {
     return (
         <div className='contactSection'>
-            <h2 className='h1'>Contact Me</h2>
+            <h2 className='h1' data-aos="zoom-in-up" >Contact Me</h2>
             <div className='contactList'>
-                <div >
+                <div data-aos="zoom-in-up" >
                     <a href="mailto:" className='text'><AiFillMail className='icons' />pradeep87055@gmail.com</a>
                     <a href="tel:+918755819345" className='text'><FaPhoneAlt className='icons' />+91 8755819345</a>
                 </div>
-                <div>
+                <div data-aos="zoom-in-up" >
                     <p className='text'><AiOutlineSend /> Social Media</p>
-                    <SocialIcons/>
+                    <SocialIcons />
                 </div>
-                <div className='messageArea'>
+                <div className='messageArea' data-aos="zoom-in-up" >
                     <div className='sendMessage'>
                         <p className='text'><AiOutlineSend /> Message Me</p>
                         <textarea name="" className='textInput' placeholder='type a message' id="" cols="30" rows="10"></textarea>
