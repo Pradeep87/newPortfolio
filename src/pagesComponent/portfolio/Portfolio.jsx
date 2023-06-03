@@ -59,14 +59,7 @@ const Portfolio = () => {
                     }
                     <h2 className='h1' style={{ marginTop: '50px' }} data-aos="zoom-in-up" >Working Projects</h2>
                     {
-                        workingProjects.map((d) => (
-                            <div className='second-work' data-aos="zoom-in-up" >
-                                <p className='text'><AiOutlineSend /> {d.project}</p>
-                                <p className='lightText'>{d.technology}</p>
-                                <p className='bigPara'>{d.description}
-                                </p>
-                            </div>
-                        ))
+                        workingProjects.map((d,idx) => <ProjectSection d={d} key={idx} />)
                     }
                 </div>
             </div>
