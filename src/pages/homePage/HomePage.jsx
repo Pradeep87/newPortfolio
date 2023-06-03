@@ -17,8 +17,8 @@ const HomePage = () => {
         < >
             <Particle option={hompageOptions} particlesInit={particlesInit} />
             <SectionWrapper>
-                <ContentWrapper>
                     <UserSection />
+                <ContentWrapper>
                     <Skills />
                     <PortfolioSection />
                     <ContactSection />
