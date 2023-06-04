@@ -168,7 +168,6 @@ svg text {
 
     border-bottom: 1px solid $lightBorder2;
     padding: 50px 0px;
-
     .techContainer {
         @include flex(row, flex-start, center);
         margin-bottom: 50px;
@@ -322,6 +321,9 @@ svg text {
 @media screen and (min-width:1024px) {
     .portfolioSection {
         margin: 100px 0px;
+    }
+    .h1{
+        margin-bottom: 50px;
     }
 }
 
