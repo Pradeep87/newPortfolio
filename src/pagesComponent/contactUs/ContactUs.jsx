@@ -8,22 +8,19 @@ const ContactUs = () => {
             <h2 className='h1' data-aos="zoom-in-up" >Contact Me</h2>
             <div className='contactList'>
                 <div data-aos="zoom-in-up" >
-                    <a href="mailto:" className='text'><AiFillMail className='icons' />pradeep87055@gmail.com</a>
-                    <a href="tel:+918755819345" className='text'><FaPhoneAlt className='icons' />+91 8755819345</a>
+                    <a href="mailto:" className='bigPara'><AiFillMail className='icons' /> pradeep87055@gmail.com</a>
+                    <a href="tel:+918755819345" className='bigPara'><FaPhoneAlt className='icons' />+91 8755819345</a>
                 </div>
                 <div data-aos="zoom-in-up" >
-                    <p className='text'><AiOutlineSend /> Social Media</p>
                     <SocialIcons />
                 </div>
                 <div className='messageArea' data-aos="zoom-in-up" >
                     <div className='sendMessage'>
                         <p className='text'><AiOutlineSend /> Message Me</p>
-                        <textarea name="" className='textInput' placeholder='type a message' id="" cols="30" rows="10"></textarea>
+                        <textarea name="" className='textInput' placeholder='Type a message' id="" cols="30" rows="10"></textarea>
                         <button className='btn'>Send <AiOutlineSend /></button>
                     </div>
                 </div>
-
-
             </div>
         </div>
     )

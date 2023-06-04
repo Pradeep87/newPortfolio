@@ -108,20 +108,24 @@ export const workingProjects = [
         icons:[
              {
         id: 12,
-        icon: <SiNextdotjs className='icons' />,
-        name: "Next js"
+        icon: <SiNextdotjs className='icons' color="#a8c6cf" />,
+        name: "Next js",
+        color:"#a8c6cf"
     }, {
         id: 3,
-        icon: <FaSass className='icons' />,
-        name: "Sass"
+        icon: <FaSass className='icons'  color="#2a5fab" />,
+        name: "Sass",
+        color:"#2a5fab"
     },  {
         id: 9,
-        icon: <FaNodeJs className='icons' />,
-        name: "Node js"
+        icon: <FaNodeJs className='icons'  color="#629fd0" />,
+        name: "Node js",
+        color:"#629fd0"
     }, {
         id: 10,
-        icon: <SiMongodb className='icons' />,
-        name: "Mongodb"
+        icon: <SiMongodb className='icons' color="#fef5de"  />,
+        name: "Mongodb",
+        color:"#fef5de"
     },
         ]
     },
