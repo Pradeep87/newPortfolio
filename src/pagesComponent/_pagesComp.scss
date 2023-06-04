@@ -13,10 +13,14 @@
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
+    position: relative;
     @include flex(column, flex-start, flex-start);
-    // border: 2px solid $lighBorder;
 
+    // border: 2px solid $lighBorder;
     img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
         width: 250px;
         height: 250px;
         // border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ;
@@ -33,19 +37,23 @@
     font-family: Inter;
     padding: 20px;
 
-    .name,.hello {
+    .name,
+    .hello {
         font-family: "El Messiri", sans-serif;
         // margin-bottom: 10px;
         // padding-bottom: 10px;
         // border-bottom: 2px solid $lighBorder;
     }
-.name{
-    font-size: 36px;
-}
-.hello{
-    font-size: 26px;
 
-}
+    .name {
+        font-size: 36px;
+    }
+
+    .hello {
+        font-size: 26px;
+
+    }
+
     .subtext {
         text-align: left;
         font-size: 18px;
@@ -100,35 +108,17 @@ svg text {
 .iconContainer {
     .projectImages {
         height: 200px;
-        width: 350px;
+        width: 300px;
         object-fit: contain;
         margin: 50px 0px;
     }
 
     @include flex(column, flex-start, flex-start);
 
-    .iconBox {
-        margin-bottom: 20px;
-        padding: 10px;
-        @include flex(column, flex-start, flex-start);
-
-        &:hover {
-            cursor: pointer;
-
-            .icons {
-                color: $textColor;
-            }
-
-            .iconName {
-                color: $textColor;
-            }
-        }
-    }
-
-
     .icons {
         font-size: 20px;
-        color: $lightText
+        color: $lightText;
+
     }
 
     .iconName {
@@ -136,6 +126,10 @@ svg text {
         color: $lightText
     }
 }
+
+
+
+
 
 .portfolioSection {
     width: 100%;
@@ -153,7 +147,7 @@ svg text {
 
         .skillBox {
             width: 90%;
-            margin-bottom: 15px;
+            margin-bottom: 30px;
             @include flex(row, flex-start, center);
 
             .icons {
@@ -186,13 +180,25 @@ svg text {
         width: 110px;
         height: 100px;
         @include flex(column, center, center);
-
+        animation: moveUpDown 5s linear  infinite;
         .icons {
             font-size: 30px;
             margin: 0px;
         }
     }
 
+   
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0); /* Initial position */
+    }
+    50% {
+      transform: translateY(20px); /* Move 20px down */
+    }
+    100% {
+      transform: translateY(0); /* Move back to initial position */
+    }
+  }
 
 
 
@@ -243,7 +249,31 @@ svg text {
 .homeIcons {
     @include flex(row, center, center);
 
+   
 }
+
+.icons {
+    animation: zoomInOut 2s infinite;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+        /* Initial size */
+    }
+
+    50% {
+        transform: scale(1.3);
+        /* Zoom in to 120% */
+    }
+
+    100% {
+        transform: scale(1);
+        /* Back to original size */
+    }
+}
+
+
 
 .messageArea {
     @include flex(row, space-between, center);
@@ -287,6 +317,11 @@ svg text {
     }
 }
 
+@media screen and (min-width:1024px) {
+    .portfolioSection {
+        margin: 100px 0px;
+    }
+}
 
 
 @media screen and (max-width:1024px) {

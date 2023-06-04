@@ -23,7 +23,7 @@ const ProjectSection = ({ d }) => {
                 {
                     d.icons.map((i, idx) => <div className='projectsIcon' key={idx}>
                         {i.icon}
-                        <p className='lightText'>{i.name}</p>
+                        <p className='lightText' style={{color:i.color?i.color:""}} >{i.name}</p>
                     </div>)
                 }
             </div>

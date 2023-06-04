@@ -142,12 +142,14 @@ export const projectData = [
         technology: "(React-Electron Js)",
         icons:[
             {
-                icon:<SiElectron className='icons' />,
-                name:"Electron js"
+                icon:<SiElectron className='icons' color="#215276" />,
+                name:"Electron js",
+                color:"#215276"
             },
             {
-                icon: <FaReact className='icons' />,
-                name: "React js"
+                icon: <FaReact className='icons' color="#177e68"  />,
+                name: "React js",
+                color:"#177e68"
             },
         ]
     },
@@ -158,12 +160,14 @@ export const projectData = [
         technology: "(React-Electron Js)",
         icons:[
             {
-                icon:<SiElectron className='icons' />,
-                name:"Electron js"
+                icon:<SiElectron className='icons' color="#629fd0" />,
+                name:"Electron js",
+                color:"#629fd0"
             },
             {
-                icon: <FaReact className='icons' />,
-                name: "React js"
+                icon: <FaReact className='icons' color="#2a5fab" />,
+                name: "React js",
+                color:"#2a5fab"
             },
         ]
     },
@@ -174,12 +178,14 @@ export const projectData = [
         technology: "(React-Electron Js and React)",
         icons:[
             {
-                icon:<SiElectron className='icons' />,
-                name:"Electron js"
+                icon:<SiElectron className='icons' color="#b424f0" />,
+                name:"Electron js",
+                color:"#b424f0"
             },
             {
-                icon: <FaReact className='icons' />,
-                name: "React js"
+                icon: <FaReact className='icons' color="#fc994d" />,
+                name: "React js",
+                color:"#fc994d"
             },
         ]
     },
@@ -190,8 +196,9 @@ export const projectData = [
         technology: "(React Js)",
         icons:[
             {
-                icon: <FaReact className='icons' />,
-                name: "React js"
+                icon: <FaReact className='icons' color="#8e7eed" />,
+                name: "React js",
+                color:"#8e7eed"
             },
         ]
     },
@@ -202,8 +209,9 @@ export const projectData = [
         technology: "(React-Native Expo)",
         icons:[
             {
-                icon: <FaReact className='icons' />,
-                name: "React-Native"
+                icon: <FaReact className='icons' color="#ffbd24"/>,
+                name: "React-Native",
+                color:"#ffbd24"
             },
         ]
     },
@@ -214,8 +222,9 @@ export const projectData = [
         technology: "(React-Native Expo)",
         icons:[
             {
-                icon: <FaReact className='icons' />,
-                name: "React-Native"
+                icon: <FaReact className='icons' color="#3c871a"  />,
+                name: "React-Native",
+                color:"#3c871a"
             },
         ]
     },
@@ -226,12 +235,14 @@ export const projectData = [
         technology: "(Nuxt js)",
         icons:[
             {
-                icon: <SiNuxtdotjs className='icons' />,
-                name: "Nuxt js"
+                icon: <SiNuxtdotjs className='icons' color="#ffbd24" />,
+                name: "Nuxt js",
+                color:"#ffbd24"
             },
             {
-                icon: <FaSass className='icons' />,
-                name: "Sass"
+                icon: <FaSass className='icons' color="#fef5de" />,
+                name: "Sass",
+                color:"#fef5de"
             }
         ]
     },
