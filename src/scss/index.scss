@@ -25,14 +25,14 @@ body {
 .text {
     color: $textColor;
     font-family: Roboto;
-font-size: 22px;
+    font-size: 22px;
 }
 
 .lightText {
     color: $lightText;
     line-height: 34px;
     font-family: Inter;
-
+    margin: 30px 0px;
 }
 
 .bigPara {
@@ -42,4 +42,3 @@ font-size: 22px;
     font-family: Inter;
 
 }
-
