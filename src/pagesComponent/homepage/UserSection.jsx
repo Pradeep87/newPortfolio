@@ -8,13 +8,14 @@ const UserSection = () => {
         <img src={user} alt="" />
       </div>
       <div className='userName'>
-        <p className='name' >Pradeep Rajput</p>
+        <p className='hello' >Hello !</p>
+        <p className='name' > <span>I'm</span> Pradeep</p>
         <svg viewBox="0 0 1320 300">
-          <text x="50%" y="50%" text-anchor="middle">
+          <text x="28%" y="28%" text-anchor="middle">
             MERN Developer
           </text>
         </svg>
-        <p className='subtext' style={{textAlign:"center"}}>I'm a skilled web developer specializing in creating dynamic and user-friendly websites. With a keen eye for design and a passion for coding, I bring creativity and functionality together to deliver exceptional online experiences.</p>
+        <p className='subtext' >I'm a skilled web developer specializing in creating dynamic and user-friendly websites. With a keen eye for design and a passion for coding, I bring creativity and functionality together to deliver exceptional online experiences.</p>
         <div className="homeIcons">
         <SocialIcons/>
         </div>
