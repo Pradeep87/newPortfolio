@@ -38,7 +38,7 @@ return (
       </div>
       <ul className={toggle?"navLink show":"navLink hide"}  >
         {
-          links.map((l) => <li onClick={()=>setToggle(!toggle)}><NavLink className={({ isActive }) => isActive ? "activeClass" : ""}
+          links.map((l) => <li key={l.Id} onClick={()=>setToggle(!toggle)}><NavLink className={({ isActive }) => isActive ? "activeClass" : ""}
             to={l.Path}>{l.Icon}&nbsp;&nbsp;{l.LinkName}</NavLink></li>)
         }
       </ul>

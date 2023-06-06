@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { AiOutlineSend } from "react-icons/ai";
-import { workingProjects, projectData } from '../../data/constant';
+import { workingProjects, projectData} from '../../data/constant';
 
 const ProjectSection = ({ d }) => {
     const [count, setCount] = useState(0);
@@ -36,6 +36,9 @@ const ProjectSection = ({ d }) => {
 const Portfolio = () => {
     return (
         <div className='portfolioSection'>
+
+
+
             <div className='myWork' data-aos="zoom-in-up" >
                 <h2 className='h1'>My Work Experience</h2>
                 <div data-aos="zoom-in-up" >

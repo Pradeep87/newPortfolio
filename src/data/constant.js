@@ -2,7 +2,7 @@ import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaSass,FaGithub } from "react-icons
 import { SiElectron, SiMongodb, SiRedux,SiMicrosoftexchange,SiNextdotjs,SiVuedotjs,SiNuxtdotjs } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 import {
-    uc1,uc2,ucLogo ,metaSole,argon,kyroLogo,kyro,truckin,y1,y2,y3,y4,y5,
+    uc1,uc2,ucLogo ,metaSole,argon,kyroLogo,kyro,truckin,y1,y2,y3,y4,y5,complete,oneYear,
 sonu1,farm1,farm2,viet1,viet2,viet3,viet4,farm3,sonu4,sonu5,sonu6,sonu7,sonu8,viet5,farm4
 } from '../assets';
 
@@ -96,6 +96,16 @@ export const iconsData = [
 
 ]
 
+
+export const experTies=[
+    {    image:oneYear,
+        name:"Year of Experience"
+    },
+    {
+        image:complete,
+        name:"Projects Completed"
+    }
+]
 
 
 

@@ -164,6 +164,11 @@ svg text {
     }
 }
 
+
+
+
+
+
 .second-work {
 
     border-bottom: 1px solid $lightBorder2;
@@ -173,45 +178,44 @@ svg text {
         margin-bottom: 50px;
 
     }
-
-    .projectsIcon {
-        height: 100px;
-        width: 110px;
-        margin-right: 20px;
-        @include flex(column, center, center);
-        animation: moveUpDown 5s linear infinite;
-        .lightText {
-            margin: 0px;
-        }
-
-        .icons {
-            font-size: 30px;
-            margin: 0px;
-        }
-    }
-
-
-    @keyframes moveUpDown {
-        0% {
-            transform: translateY(0);
-            /* Initial position */
-        }
-
-        50% {
-            transform: translateY(20px);
-            /* Move 20px down */
-        }
-
-        100% {
-            transform: translateY(0);
-            /* Move back to initial position */
-        }
-    }
-
-
-
-
 }
+
+
+.projectsIcon {
+    height: 100px;
+    width: 110px;
+    margin-right: 20px;
+    @include flex(column, center, center);
+    animation: moveUpDown 5s linear infinite;
+    .lightText {
+        margin: 0px;
+    }
+
+    .icons {
+        font-size: 30px;
+        margin: 0px;
+    }
+}
+
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+        /* Initial position */
+    }
+
+    50% {
+        transform: translateY(20px);
+        /* Move 20px down */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Move back to initial position */
+    }
+}
+
+
 
 .contactSection {
     width: 100%;

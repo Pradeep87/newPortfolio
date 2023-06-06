@@ -11,7 +11,7 @@ const UserSection = () => {
         <p className='hello' >Hello !</p>
         <p className='name' > <span>I'm</span> Pradeep</p>
         <svg viewBox="0 0 1320 300">
-          <text x="28%" y="28%" text-anchor="middle">
+          <text x="28%" y="28%" textAnchor="middle">
             MERN Developer
           </text>
         </svg>
