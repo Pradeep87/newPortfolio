@@ -37,7 +37,7 @@ const Portfolio = () => {
     return (
         <div className='portfolioSection'>
             <div className='myWork' data-aos="zoom-in-up" >
-                <h2 className='h1'>Work Experience</h2>
+                <h2 className='h1'>My Work Experience</h2>
                 <div data-aos="zoom-in-up" >
                     <p className='text' data-aos="zoom-in-up" ><AiOutlineSend /> Frontend Developer </p>
                     <p className='lightText'>Proponent Technologies <br />(22 may 2022 - 31 may 2023)</p>

@@ -19,8 +19,8 @@ const HomePage = () => {
             <SectionWrapper>
                     <UserSection />
                 <ContentWrapper>
-                    <Skills />
                     <PortfolioSection />
+                    <Skills />
                     <MyEducation/>
                     <ContactSection />
                 </ContentWrapper>
