@@ -280,22 +280,25 @@ svg text {
     @include flex(row, space-between, center);
 
     .sendMessage {
-        @include flex(column, flex-start, flex-start);
+        form{
+            @include flex(column, flex-start, flex-start);
 
-        .btn {
-            padding: 10px 20px;
-            margin: 20px 0px;
-            border-radius: 20px;
-            border: 2px solid $textColor;
-            background: transparent;
-            color: $textColor;
-
-            &:hover {
-                color: $lightText;
-                border: 2px solid $lightText;
-                cursor: pointer;
+            .btn {
+                padding: 10px 20px;
+                margin: 20px 0px;
+                border-radius: 20px;
+                border: 2px solid $textColor;
+                background: transparent;
+                color: $textColor;
+    
+                &:hover {
+                    color: $lightText;
+                    border: 2px solid $lightText;
+                    cursor: pointer;
+                }
             }
         }
+       
     }
 }
 
@@ -428,7 +431,7 @@ svg text {
         @include flex(column, flex-start, flex-start);
 
         .sendMessage {
-            textarea {
+            textarea,input {
                 width: 100%;
             }
         }

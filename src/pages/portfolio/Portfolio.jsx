@@ -4,7 +4,7 @@ import { Particle } from '../../components'
 import { maskOptions } from '../../data/particles'
 import { loadPolygonMaskPlugin } from "tsparticles-plugin-polygon-mask";
 import { loadFull } from "tsparticles";
-import {PortfolioSection,Skills}from '../../pagesComponent'
+import { PortfolioSection, Skills, MyEducation,ContactSection } from '../../pagesComponent'
 
 
 
@@ -19,8 +19,10 @@ const Portfolio = () => {
       <Particle option={maskOptions} particlesInit={particlesInit} />
       <SectionWrapper>
         <ContentWrapper>
-          <Skills/>
-          <PortfolioSection/>
+          <PortfolioSection />
+          <Skills />
+          <MyEducation />
+          <ContactSection/>
         </ContentWrapper>
       </SectionWrapper>
     </>
