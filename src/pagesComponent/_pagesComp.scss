@@ -5,6 +5,12 @@
     @include flex(row, space-between, center);
 }
 
+@media screen and (min-width:1000px) {
+    .userSection {
+        padding: 0px 10%;
+    }
+}
+
 .userBackground {
     width: 45%;
     height: 80vh;
@@ -22,12 +28,12 @@
         top: 0px;
         left: 0px;
         width: 250px;
-        transform: rotate(23deg);
-        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        // transform: rotate(23deg);
+        // border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
         // height: 250px;
         // border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ;
-        background-color: $lightBorder1;
-        border: 2px solid $lightBorder2;
+        // background-color: $lightBorder1;
+        // border: 2px solid $lightBorder2;
         object-fit: cover;
     }
 }
@@ -137,10 +143,12 @@ svg text {
 .portfolioSection {
     width: 100%;
     height: 100%;
+    position: relative;
     @include flex(row, space-between, flex-start);
 
     .myWork {
         width: 50%;
+
         @include flex(column, flex-start, flex-start);
     }
 
@@ -448,3 +456,5 @@ svg text {
         }
     }
 }
+
+

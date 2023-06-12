@@ -35,10 +35,7 @@ const ProjectSection = ({ d }) => {
 
 const Portfolio = () => {
     return (
-        <div className='portfolioSection'>
-
-
-
+        <div className='portfolioSection   stick'>
             <div className='myWork' data-aos="zoom-in-up" >
                 <h2 className='h1'>My Work Experience</h2>
                 <div data-aos="zoom-in-up" >
@@ -54,7 +51,6 @@ const Portfolio = () => {
                 </div>
             </div>
             <div className='projects'  >
-
                 <div className='iconContainer'>
                     <h2 className='h1' style={{ marginTop: '50px' }} data-aos="zoom-in-up" >Projects Completed</h2>
                     {
