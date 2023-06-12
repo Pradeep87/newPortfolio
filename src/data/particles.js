@@ -181,7 +181,7 @@ export const hompageOptions = {
           triangles: {
               enable: true,
               color: "#09e6ff70",
-              opacity: 0.02
+              opacity: 0.01
             }
       },
       collisions: {
