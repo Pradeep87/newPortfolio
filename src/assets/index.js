@@ -1,4 +1,4 @@
-import user from './images/user.png'
+import user from './images/user3.png'
 import userBackground from './images/bg3.png'
 import portfoliobg from './images/p4.png'
 import ucLogo from './project/uc-logo.png'
