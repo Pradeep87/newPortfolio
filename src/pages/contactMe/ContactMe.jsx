@@ -1,23 +1,9 @@
-import React, { useCallback } from 'react'
-import { SectionWrapper, ContentWrapper } from '../../layout'
-// import { Particle } from '../../components'
-// import { portfolioOptions } from '../../data/particles'
-// import { loadPolygonPath } from "tsparticles-path-polygon";
-// import { loadFull } from "tsparticles";
-import {ContactSection}from '../../pagesComponent'
-
-const ContactMe = () => {
-    // const particlesInit = useCallback(async (engine) => {
-    //     await loadPolygonPath(engine);
-    //     await loadFull(engine);
-    //   }, []);
-  return (
-    <SectionWrapper>
-      <ContentWrapper>
-      <ContactSection/>
-      </ContentWrapper>
-    </SectionWrapper>
+const ContactUs=()=>{
+  return(
+    <div>
+      <h1>contact us page</h1>
+    </div>
   )
 }
 
-export default ContactMe
+export default ContactUs

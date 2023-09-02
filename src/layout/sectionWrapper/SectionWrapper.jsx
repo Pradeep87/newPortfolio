@@ -2,7 +2,9 @@ import React from 'react'
 
 const SectionWrapper = ({children}) => {
   return (
-    <section className='section'>{children}</section>
+    <section className='content'>
+      <div className='section'>{children}</div>
+    </section>
   )
 }
 

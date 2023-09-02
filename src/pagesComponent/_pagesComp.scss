@@ -1,42 +1,34 @@
 .userSection {
-    margin-top: 50px;
     width: 100%;
     height: 100%;
     @include flex(row, space-between, center);
 }
 
-@media screen and (min-width:1000px) {
-    .userSection {
-        padding: 0px 10%;
-    }
-}
-
 .userBackground {
-    width: 45%;
+    width: 40%;
     height: 80vh;
     border-radius: 0px 0px 0px 0px;
     background: url('../assets/images/bg5.png');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: bottom center;
     background-size: contain;
     @include flex(column, flex-start, flex-start);
+    border-right: 2px solid $lightBorder1;
+    border-bottom: 2px solid $lightBorder1;
 
     img {
-
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
+        width: 50%;
+        height: 50%;
         background-color: $lightBorder1;
         border: 2px solid $lightBorder2;
-        object-fit: contain;
+        object-fit: cover;
         animation: moveUpDown 5s linear infinite;
-
     }
 }
 
 .userName {
     @include flex(column, flex-start, flex-start);
-    width: 50%;
+    width: 40%;
     height: 80%;
     color: $textColor;
     font-family: Inter;
@@ -44,14 +36,12 @@
 
     .name,
     .hello {
-        font-family: "El Messiri", sans-serif;
-        // margin-bottom: 10px;
-        // padding-bottom: 10px;
-        // border-bottom: 2px solid $lighBorder;
+        font-family: $paraFont
     }
 
     .name {
-        font-size: 36px;
+        font-size: 40px;
+        margin: 30px 0px;
     }
 
     .hello {
@@ -62,8 +52,7 @@
     .subtext {
         text-align: left;
         font-size: 18px;
-        font-family: "El Messiri", sans-serif;
-
+        font-family: $paraFont
     }
 
 }
@@ -225,7 +214,6 @@ svg text {
 }
 
 
-
 .contactSection {
     width: 100%;
     height: 100%;
@@ -244,8 +232,10 @@ svg text {
 }
 
 .iconsContainer {
+
+
     @include flex(row, flex-start, flex-start);
-    margin: 30px 0px 30px 0px;
+    margin: 30px 0px;
 }
 
 .icons {

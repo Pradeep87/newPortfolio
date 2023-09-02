@@ -1,12 +1,13 @@
 import React from 'react'
 import { user} from '../../assets'
 import {SocialIcons}  from '../../components'
+
 const UserSection = () => {
   return (
     <div className='userSection'>
       <div className='userName'>
         <p className='hello' >Hello !</p>
-        <p className='name' > <span>I'm</span> Pradeep</p>
+        <p className='name' > <span>I'm</span> Pradeep Rajput</p>
         <svg viewBox="0 0 1320 300">
           <text x="28%" y="28%" textAnchor="middle">
             MERN Developer
