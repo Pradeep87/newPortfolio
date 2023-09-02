@@ -10,7 +10,7 @@ const UserSection = () => {
         <p className='name' > <span>I'm</span> Pradeep Rajput</p>
         <svg viewBox="0 0 1320 300">
           <text x="28%" y="28%" textAnchor="middle">
-            MERN Developer
+            Web Developer
           </text>
         </svg>
         <p className='subtext' >I'm a skilled web developer specializing in creating dynamic and user-friendly websites. With a keen eye for design and a passion for coding, I bring creativity and functionality together to deliver exceptional online experiences.</p>

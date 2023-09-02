@@ -125,7 +125,7 @@ export const workingProjects = [
             }, {
                 id: 9,
                 icon: <FaNodeJs className='icons' color="#629fd0" />,
-                name: "Node js",
+                name: "Node",
                 color: "#629fd0"
             }, {
                 id: 10,
@@ -154,7 +154,7 @@ export const workingProjects = [
             }, {
                 id: 9,
                 icon: <FaNodeJs className='icons' color="#629fd0" />,
-                name: "Node js",
+                name: "Node",
                 color: "#629fd0"
             }, {
                 id: 10,

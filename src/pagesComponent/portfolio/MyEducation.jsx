@@ -6,7 +6,7 @@ const MyEducation = () => {
         <div className='portfolioSection'>
             <h2 className='h1'>My Education</h2>
             <div className='education' data-aos="zoom-in-up" >
-                <div  data-aos="zoom-in-up" >
+                <div  data-aos="zoom-in-up" style={{width:"100%"}} >
                     <p className='text' data-aos="zoom-in-up" ><FaBookReader className='icons' /> Bachelor of Computer Application</p>
                     <p className='lightText'>Hemvati Nandan Bahuguna Garhwal University <br />Year 2018 - 2021</p>
                     <p className='bigPara' data-aos="zoom-in-up" >Omkarananda Institute of Management & Technology</p>

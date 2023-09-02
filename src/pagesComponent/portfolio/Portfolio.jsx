@@ -57,7 +57,7 @@ const Portfolio = () => {
                         projectData.map((d, idx) => <ProjectSection d={d} key={idx} />)
                     }
                 </div>
-                <h2 className='h1' data-aos="zoom-in-up" >Working Projects</h2>
+                <h2 className='h1' data-aos="zoom-in-up" style={{marginTop:"100px"}} >Working Projects</h2>
                 <div className='iconContainer'>
                     {
                         workingProjects.map((d, idx) => <ProjectSection d={d} key={idx} />)

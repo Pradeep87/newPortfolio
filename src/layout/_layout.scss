@@ -1,15 +1,15 @@
 .section {
     width: 100%;
-    margin-top: 150px;
+    border-bottom: 1px solid $userbg;
+    padding: 100px 0px;
 }
 
 .content {
-    width: 100%;
+    max-width: 1500px;
     height: 100%;
     margin: auto;
-    padding: 0px 5%;
+    padding: 0px 3%;
     overflow: auto;
-
     &::-webkit-scrollbar {
         width: 10px;
     }
@@ -32,9 +32,12 @@
 }
 
 .navLink {
+    max-width: 1500px;
+    margin: auto;
     @include flex(row, flex-end, center);
     list-style-type: none;
     transition: all 1s;
+    background-color: $mainBackground;
 
     li {
         margin-right: 20px;
