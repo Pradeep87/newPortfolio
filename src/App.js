@@ -21,7 +21,7 @@ const App = () => {
       offset: 100,
       duration: 1000,
       easing: 'ease',
-      delay: 500,
+      delay: 0,
     });
   }, []);
   return (

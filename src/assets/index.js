@@ -34,6 +34,12 @@ import y2 from './project/y2.png'
 import y3 from './project/y3.png'
 import y4 from './project/y4.png'
 import y5 from './project/y6.png'
+import b1 from './project/b1.png'
+import b2 from './project/b2.png'
+import b3 from './project/b3.png'
+import b5 from './project/b5.png'
+
+
 import oneYear from './project/oneYear.png'
 import complete from './project/complete.png'
 
@@ -41,5 +47,5 @@ import complete from './project/complete.png'
 
 export {user ,userBackground,portfoliobg,uc1,uc2,ucLogo ,metaSole,argon,kyroLogo,kyro,truckin,
 sonu1,sonu2,sonu3,farm1,farm2,viet1,viet2,viet3,viet4,farm3,sonu4,sonu5,sonu6,sonu7,sonu8,viet5,farm4,
-y1,y2,y3,y4,y5,complete,oneYear
+y1,y2,y3,y4,y5,complete,oneYear,b1,b2,b3,b5
 }

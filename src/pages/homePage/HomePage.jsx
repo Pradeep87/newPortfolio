@@ -1,11 +1,18 @@
-import UserSection from "../../pagesComponent/homepage/UserSection"
+import {UserSection,PortfolioSection} from "../../pagesComponent/"
 import { SectionWrapper } from '../../layout'
 
+
+
 const HomePage = () => {
-  return (
-    <SectionWrapper>
+  return (<>
+   <SectionWrapper>
       <UserSection />
     </SectionWrapper>
+    <SectionWrapper>
+      <PortfolioSection/>
+    </SectionWrapper>
+  </>
+   
   )
 }
 

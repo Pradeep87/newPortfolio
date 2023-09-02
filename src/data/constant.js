@@ -2,7 +2,7 @@ import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaSass, FaGithub } from "react-icon
 import { SiElectron, SiMongodb, SiRedux, SiMicrosoftexchange, SiNextdotjs, SiVuedotjs, SiNuxtdotjs } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 import {
-    uc1, uc2, ucLogo, metaSole, argon, kyroLogo, kyro, truckin, y1, y2, y3, y4, y5, complete, oneYear,
+    uc1, uc2, ucLogo, metaSole, argon, kyroLogo, kyro, truckin, y1, y2, y3, y4, y5, complete, oneYear,b1,b2,b3,b5,
     sonu1, farm1, farm2, viet1, viet2, viet3, viet4, farm3, sonu4, sonu5, sonu6, sonu7, sonu8, viet5, farm4
 } from '../assets';
 
@@ -111,6 +111,35 @@ export const workingProjects = [
         description: "Yogshala.in is a comprehensive social media platform designed specifically for yoga teachers and students. This project encompasses both a web application and a mobile app that communicate with APIs. The platform offers a range of features, including chat functionality for seamless communication, yoga class scheduling for convenient planning, and addressing health issues related to yoga. By providing a dedicated space for the yoga community, Yogshala.in aims to connect individuals, facilitate learning, and promote overall well-being through the practice of yoga.",
         technology: "(Nextjs, React-Native, Nodejs, Expressjs and Mongodb)",
         images: [y1, y2, y3, y4, y5],
+        icons: [
+            {
+                id: 12,
+                icon: <SiNextdotjs className='icons' color="#a8c6cf" />,
+                name: "Next js",
+                color: "#a8c6cf"
+            }, {
+                id: 3,
+                icon: <FaSass className='icons' color="#2a5fab" />,
+                name: "Sass",
+                color: "#2a5fab"
+            }, {
+                id: 9,
+                icon: <FaNodeJs className='icons' color="#629fd0" />,
+                name: "Node js",
+                color: "#629fd0"
+            }, {
+                id: 10,
+                icon: <SiMongodb className='icons' color="#fef5de" />,
+                name: "Mongodb",
+                color: "#fef5de"
+            },
+        ]
+    },
+    {
+        project: "Beatles Choice",
+        description: "Beatles Choice is an e-commerce website designed to efficiently manage and sell a wide range of products across various categories. The website provides a user-friendly interface for customers to browse and purchase products based on their preferences. With robust categorization and organization, Beatles Choice aims to enhance the shopping experience by ensuring easy navigation and streamlined product selection.",
+        technology: "(Nextjs, React-Native, Nodejs, Expressjs and Mongodb)",
+        images: [b1,b2,b3,b5],
         icons: [
             {
                 id: 12,
