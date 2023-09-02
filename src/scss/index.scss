@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+
+$mainBackground: #0e0e0f;
+
+
+
+// old 
+$bodybg: #141A31;
+
+
 @import './mixings';
 @import '../layout/layout';
 @import '../components/components';
@@ -11,7 +20,7 @@
 
 body {
     font-family: Inter;
-    background-color: #141A31;
+    background-color: $mainBackground;
 }
 
 .h1 {

@@ -16,7 +16,6 @@ const Portfolio = () => {
 
   return (
     <>
-      <Particle option={maskOptions} particlesInit={particlesInit} />
       <SectionWrapper>
         <ContentWrapper>
           <PortfolioSection />

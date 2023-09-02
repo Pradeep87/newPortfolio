@@ -15,10 +15,9 @@ const HomePage = () => {
 
     return (
         < >
-            <Particle option={hompageOptions} particlesInit={particlesInit} />
             <SectionWrapper>
-                    <UserSection />
                 <ContentWrapper>
+                    <UserSection />
                     <PortfolioSection />
                     <Skills />
                     <MyEducation/>

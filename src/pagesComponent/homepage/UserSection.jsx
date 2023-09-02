@@ -4,9 +4,6 @@ import {SocialIcons}  from '../../components'
 const UserSection = () => {
   return (
     <div className='userSection'>
-      <div className='userBackground'>
-        <img src={user} alt="" />
-      </div>
       <div className='userName'>
         <p className='hello' >Hello !</p>
         <p className='name' > <span>I'm</span> Pradeep</p>
@@ -19,6 +16,9 @@ const UserSection = () => {
         <div className="homeIcons">
         <SocialIcons/>
         </div>
+      </div>
+      <div className='userBackground'>
+        <img src={user} alt="" />
       </div>
     </div>
   )
