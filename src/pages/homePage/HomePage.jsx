@@ -1,4 +1,4 @@
-import {UserSection,PortfolioSection,MyEducation,Skills} from "../../pagesComponent/"
+import {UserSection,PortfolioSection,MyEducation,Skills,ContactSection} from "../../pagesComponent/"
 import { SectionWrapper } from '../../layout'
 
 
@@ -16,6 +16,9 @@ const HomePage = () => {
     </SectionWrapper>
     <SectionWrapper>
       <Skills/>
+    </SectionWrapper>
+    <SectionWrapper>
+      <ContactSection/>
     </SectionWrapper>
   </>
    

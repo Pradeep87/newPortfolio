@@ -153,19 +153,22 @@ svg text {
 
     }
 }
-.skills{
-    .text{
+
+.skills {
+    @include flex(column, flex-start, flex-start);
+
+    .text {
         margin: 50px 0px;
     }
 
-.skillBoxes{
-    @include flex(row, flex-start, flex-start);
-    flex-wrap: wrap;
-}
+    .skillBoxes {
+        @include flex(row, flex-start, flex-start);
+        flex-wrap: wrap;
+    }
 
 
     .skillBox {
-        margin:20px;
+        margin: 20px;
         padding: 20px;
         @include flex(row, flex-start, center);
         border: 1px solid $headingColor;
@@ -227,18 +230,24 @@ svg text {
         width: 45%;
         margin: 100px 0px;
     }
-
 }
 
 
 
 .contactSection {
+    @include flex(column, flex-start, flex-start);
+
     width: 100%;
     height: 100%;
     margin: 50px 0px;
 
     .contactList {
-        width: 50%;
+        width: 100%;
+        @include flex(row, flex-start, center);
+
+        .firstDiv {
+            width: 50%;
+        }
 
         a {
             text-decoration: none;
@@ -304,17 +313,25 @@ svg text {
         form {
             @include flex(column, flex-start, flex-start);
 
+            input {
+                width: 100%;
+            }
+
+            textarea {
+                width: 100%;
+            }
+
             .btn {
                 padding: 10px 20px;
                 margin: 20px 0px;
                 border-radius: 20px;
-                border: 2px solid $textColor;
+                border: 2px solid $paraColor;
                 background: transparent;
-                color: $textColor;
+                color: $paraColor;
 
                 &:hover {
-                    color: $lightText;
-                    border: 2px solid $lightText;
+                    color: $paraColor;
+                    border: 2px solid $paraColor;
                     cursor: pointer;
                 }
             }
@@ -329,15 +346,15 @@ svg text {
     border: none;
     outline: none;
     background: transparent;
-    border: 2px solid $lighBorder;
-    caret-color: $textColor;
-    color: $textColor;
+    border: 2px solid $paraColor;
+    caret-color: $paraColor;
+    color: $paraColor;
     font-size: 14px;
     font-family: Inter;
     padding: 10px;
     margin-right: 20px;
 
     &::placeholder {
-        color: $textColor;
+        color: $paraColor;
     }
 }

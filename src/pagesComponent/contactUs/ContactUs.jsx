@@ -67,13 +67,16 @@ const ContactUs = () => {
         <div className='contactSection'>
             <h2 className='h1' data-aos="zoom-in-up" >Contact Me</h2>
             <div className='contactList'>
-                <div data-aos="zoom-in-up" >
-                    <a href="mailto:" className='bigPara'><AiFillMail className='icons' /> pradeep87055@gmail.com</a>
-                    <a href="tel:+918755819345" className='bigPara'><FaPhoneAlt className='icons' />+91 8755819345</a>
+                <div className='firstDiv'>
+                    <div data-aos="zoom-in-up" >
+                        <a href="mailto:" className='bigPara'><AiFillMail className='icons' /> pradeep87055@gmail.com</a>
+                        <a href="tel:+918755819345" className='bigPara'><FaPhoneAlt className='icons' />+91 8755819345</a>
+                    </div>
+                    <div data-aos="zoom-in-up" >
+                        <SocialIcons />
+                    </div>
                 </div>
-                <div data-aos="zoom-in-up" >
-                    <SocialIcons />
-                </div>
+
                 <div className='messageArea' data-aos="zoom-in-up" >
                     <div className='sendMessage'>
                         <form onSubmit={PostData} >
@@ -94,7 +97,7 @@ const ContactUs = () => {
                             />
 
                             <textarea name="message" className='textInput' value={msg.message} onChange={getInput} placeholder='Type Message' id="" cols="30" rows="10"></textarea>
-                            <button type='submit' className='btn'> {loading?"Please Wait": "Send" } &nbsp;<AiOutlineSend /></button>
+                            <button type='submit' className='btn'> {loading ? "Please Wait" : "Send"} &nbsp;<AiOutlineSend /></button>
                         </form>
 
                     </div>

@@ -1,8 +1,10 @@
+import { SectionWrapper } from "../../layout"
+import { ContactSection } from "../../pagesComponent"
 const ContactUs=()=>{
   return(
-    <div>
-      <h1>contact us page</h1>
-    </div>
+    <SectionWrapper>
+    <ContactSection />
+  </SectionWrapper>
   )
 }
 
