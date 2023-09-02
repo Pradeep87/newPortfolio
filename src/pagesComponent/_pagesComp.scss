@@ -110,6 +110,7 @@ svg text {
 
     @include flex(row, space-between, flex-start);
     flex-wrap: wrap;
+
     .second-work {
         width: 45%;
         margin: 100px 0px;
@@ -127,7 +128,7 @@ svg text {
     }
 }
 
-.techContainer{
+.techContainer {
     @include flex(row, flex-start, center);
     margin: 50px 0px;
 
@@ -136,12 +137,12 @@ svg text {
 .portfolioSection {
     width: 100%;
     height: 100%;
-    position: relative;
     @include flex(column, space-between, flex-start);
 
     .myWork {
         margin: 100px 0px;
         @include flex(row, space-between, flex-start);
+
         div {
             width: 40%;
         }
@@ -150,25 +151,37 @@ svg text {
     .projects {
         @include flex(column, flex-start, flex-start);
 
-        .skillBox {
-            width: 90%;
-            margin-bottom: 30px;
-            @include flex(row, flex-start, center);
+    }
+}
+.skills{
+    .text{
+        margin: 50px 0px;
+    }
 
-            .icons {
-                font-size: 20px;
-                color: $textColor;
-                margin-right: 20px;
-            }
+.skillBoxes{
+    @include flex(row, flex-start, flex-start);
+    flex-wrap: wrap;
+}
 
-            .iconName {
-                font-size: 20px;
-                color: $textColor
-            }
+
+    .skillBox {
+        margin:20px;
+        padding: 20px;
+        @include flex(row, flex-start, center);
+        border: 1px solid $headingColor;
+
+        .icons {
+            font-size: 30px;
+            color: $textColor;
+            margin-right: 20px;
+        }
+
+        .iconName {
+            font-size: 20px;
+            color: $headingColor
         }
     }
 }
-
 
 .projectsIcon {
     height: 100px;
@@ -204,6 +217,19 @@ svg text {
         /* Move back to initial position */
     }
 }
+
+.education {
+    width: 100%;
+    @include flex(row, flex-start, flex-start);
+    flex-wrap: wrap;
+
+    div {
+        width: 45%;
+        margin: 100px 0px;
+    }
+
+}
+
 
 
 .contactSection {
