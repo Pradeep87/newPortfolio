@@ -164,16 +164,27 @@ svg text {
     }
 
     .skillBoxes {
-        @include flex(row, flex-start, flex-start);
+        @include flex(row, space-between, flex-start);
         flex-wrap: wrap;
     }
 
 
     .skillBox {
-        margin: 20px;
-        padding: 20px;
+        margin: 20px 0px;
+        padding: 10px 0px;
         @include flex(row, flex-start, center);
-        border: 1px solid $headingColor;
+        width: 40%;
+
+        &::before {
+            width: 50%;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 8%;
+            border-bottom: 2px solid $headingColor;
+            z-index: 2;
+            animation: dive 5s linear infinite alternate-reverse;
+        }
 
         .icons {
             font-size: 30px;
@@ -187,6 +198,17 @@ svg text {
         }
     }
 }
+
+@keyframes dive {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
 
 .projectsIcon {
     height: 100px;
@@ -449,7 +471,7 @@ svg text {
             @include flex(column, flex-start, flex-start);
 
             .firstDiv {
-                width: 50%;
+                width: 100%;
             }
 
             a {
@@ -471,6 +493,20 @@ svg text {
         }
     }
 
+    .skills {
+        .skillBox {
+            width: 100%;
+        }
+    }
+}
 
 
+.copyright {
+    border-top:1px solid $userbg ;
+    padding: 20px 0px;
+    width: 100%;
+    text-align: center;
+    color: $paraColor;
+    margin-top: 50px;
+    margin-bottom: -50px;
 }
