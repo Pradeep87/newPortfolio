@@ -40,7 +40,7 @@ const Portfolio = () => {
             <div className='myWork' data-aos="zoom-in-up" >
                 <div data-aos="zoom-in-up" >
                     <p className='text' data-aos="zoom-in-up" ><AiOutlineSend /> Frontend Developer </p>
-                    <p className='lightText'>Proponent Technologies <br />(22 may 2022 - 31 may 2023)</p>
+                    <p className='lightText'>Proponent Technologies <br />(22 may 2022 - Oct 2023)</p>
                     <p className='bigPara' data-aos="zoom-in-up" >Experienced in developing a Food app using the MERN stack, delivering a seamless ordering and delivery experience. Created a chat application using React.js and Getstream.io, enabling real-time communication and collaboration. Developed mobile apps using React Native Expo, providing cross-platform functionality for enhanced user experiences.</p>
                 </div>
                 <div>
