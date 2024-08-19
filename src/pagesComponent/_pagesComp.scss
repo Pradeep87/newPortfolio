@@ -67,7 +67,7 @@ svg text {
     animation: stroke 5s infinite alternate;
     stroke-width: 2;
     stroke: #365fa0;
-    font-size: 100px;
+    font-size: 90px;
     font-family: "El Messiri", sans-serif;
 }
 
@@ -144,7 +144,15 @@ svg text {
     .myWork {
         margin: 100px 0px;
         @include flex(row, space-between, flex-start);
-
+.work-img{
+    background-image: url('../assets/images/company.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    img{
+        height: 400px;
+    }
+}
         div {
             width: 40%;
         }
@@ -503,7 +511,7 @@ svg text {
 
 
 .copyright {
-    border-top:1px solid $userbg ;
+    border-top: 1px solid $userbg ;
     padding: 20px 0px;
     width: 100%;
     text-align: center;
